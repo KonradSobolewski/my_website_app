@@ -7,8 +7,6 @@
   -moz-box-shadow: 0 10px 40px -10px rgba(0,0,0,0.60);
   box-shadow: 0 10px 40px -10px rgba(0,0,0,0.60);
   border-radius: 4px;
-  left: 0;
-  right: 0;
   margin: 2em auto;
   background: white;
   max-width: 60%;
@@ -26,27 +24,9 @@
   height: 40px;
   cursor: pointer;
 }
-
-.ArrowButton:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.fab {
+margin: 0 2em;
 }
-
-.ArrowButton:active {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.PrevArrow {
-  @extend .ArrowButton;
-  margin-right: auto;
-}
-
-.NextArrow {
-  @extend .ArrowButton;
-  margin-left: auto;
-}
-
-.Disabled {
-  pointer-events: none;
-  cursor: not-allowed;
-  color: gray;
+.sendIcon {
+  margin: 0 0.5em;
 }

@@ -1,0 +1,17 @@
+.DetailsContainer {
+  display: grid;
+  width: 100%;
+}
+
+.RefreshButton {
+  justify-self: flex-end;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 30px;
+  margin-right: 32px;
+}
+
+.Progress {
+  position: absolute;
+  left: 45%;
+}

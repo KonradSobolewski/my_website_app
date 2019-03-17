@@ -1,0 +1,1 @@
+export const SET_INPUT = 'SET_USER_INPUT';

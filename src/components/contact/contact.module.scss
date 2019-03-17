@@ -1,0 +1,53 @@
+.contact {
+  padding: 2em;
+  display: grid;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.iconArea {
+  display: flex;
+}
+
+.href {
+  margin: 2em;
+}
+
+.card {
+  width: 20em;
+  height: 12em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gmail {
+  @extend .card;
+  background: #D44638;
+
+}
+
+.facebook {
+  @extend .card;
+  background: #3a5998;
+}
+
+.github {
+  @extend .card;
+  background: black;
+}
+
+.linkedin {
+  @extend .card;
+  background: #007bb6;
+}
+
+.image {
+  width: 10em;
+  filter: brightness(0) invert(1);
+}
+
+.mapContainer {
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+}

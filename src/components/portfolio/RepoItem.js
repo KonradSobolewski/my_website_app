@@ -3,11 +3,16 @@ import {
     ExpansionPanel,
     ExpansionPanelDetails,
     ExpansionPanelSummary,
-    Icon,
     Tooltip
 } from '@material-ui/core';
 import classes from './RepoItem.module.css';
 import Chip from '@material-ui/core/Chip';
+import {Star} from '@material-ui/icons'
+
+function formatDate(date) {
+    let formatted = new Date(date);
+    return formatted.toDateString();
+}
 
 const RepoItem = props => (
     <ExpansionPanel>
@@ -17,17 +22,28 @@ const RepoItem = props => (
                 {props.repository.name}
             </div>
 
-            <div style={{marginLeft: 'auto'}} className={classes.chip}>
-                <Tooltip title='Stargazers'>
-                    <Chip icon={<Icon>star</Icon>}
-                          label={props.repository.stargazers_count}/>
+            <div>
+                <Tooltip title='Stargazers' className={classes.Tooltip}>
+                    <Chip icon={<Star/>}
+                          label={props.repository.stargazers_count}
+                          color="secondary"/>
                 </Tooltip>
             </div>
 
-            <div className={classes.chip}>
+            <div>
+                {props.repository.updated_at &&
+                <Tooltip title='Last update' className={classes.Tooltip}>
+                    <Chip label={formatDate(props.repository.updated_at)}
+                          variant="outlined"
+                          color="secondary"/>
+                </Tooltip>}
+            </div>
+
+            <div>
                 {props.repository.language &&
-                <Tooltip title='Primary language'>
-                    <Chip label={props.repository.language}/>
+                <Tooltip title='Primary language' className={classes.Tooltip}>
+                    <Chip label={props.repository.language}
+                          color="primary"/>
                 </Tooltip>}
             </div>
         </ExpansionPanelSummary>

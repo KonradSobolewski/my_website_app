@@ -5,10 +5,15 @@
 
 .RefreshButton {
   justify-self: flex-end;
-  display: grid;
+  display: flex;
   grid-template-columns: auto auto;
   grid-column-gap: 30px;
   margin-right: 32px;
+}
+
+.detailsContent {
+  display: flex;
+  justify-content: center;
 }
 
 .Progress {

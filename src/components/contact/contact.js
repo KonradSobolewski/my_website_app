@@ -59,7 +59,7 @@ export default class Contact extends React.Component {
                         </a>
                     </div>
                 </div>
-                <GoogleMapsContainer/>
+                <GoogleMapsContainer />
             </div>
         )
     }

@@ -41,7 +41,7 @@ export const searchRepos = (userInput) => dispatch => {
             dispatch(setRepos(
                 response
                     .filter(o => Config.EXCLUDE_LANG.indexOf(o.language.toUpperCase()) === -1)
-                    .sort((a, b) => new Date(b.updated_at).getTime() -  new Date(a.updated_at).getTime() )
+                    .sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())
                 )
             );
             dispatch(loading(false));

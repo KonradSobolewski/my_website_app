@@ -19,6 +19,7 @@
     text-align: left;
 }
 
-.chip {
-    max-width: 150px;
+.Tooltip {
+    position: relative;
+    float: right;
 }

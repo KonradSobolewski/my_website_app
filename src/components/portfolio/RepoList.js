@@ -9,6 +9,9 @@ const RepoList = props => (
             <RepoItem key={repo.id}
                       repository={repo}>
                 <div className={classes.DetailsContainer}>
+                    <div className={classes.detailsContent}>
+                        {repo.description}
+                    </div>
                     <div className={classes.RefreshButton}>
                         <a href={repo.html_url} target='_blank' rel="noopener noreferrer" style={{textDecoration: 'none'}}>
                             <Button color='secondary'>Go to repo</Button>

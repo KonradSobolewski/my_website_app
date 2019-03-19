@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography/Typography";
 import * as mapActions from "../../redux/actions/googleMap/mapActions";
 import connect from "react-redux/es/connect/connect";
 import * as Config from "../../config/config"
+import * as classes from "./contact.module.scss";
 
 class GoogleMapsContainer extends React.Component {
 
@@ -33,6 +34,7 @@ class GoogleMapsContainer extends React.Component {
                 onClick={this.onMapClick}
                 zoom={13}
                 initialCenter={{lat: 52.237049, lng: 21.017532}}
+                className={classes.mapContainer}
             >
                 <Marker
                     onClick={this.onMarkerClick}

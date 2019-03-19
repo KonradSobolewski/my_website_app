@@ -1,12 +1,10 @@
 import React from 'react'
-import connect from "react-redux/es/connect/connect";
 import * as classes from './contact.module.scss'
 import gmail from "../../assets/images/gmail-logo.png";
 import fbLogo from "../../assets/images/fb-logo.png";
 import gitLogo from "../../assets/images/github-logo.png";
 import linkLogo from "../../assets/images/linkedin-logo.png";
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import GoogleMapsContainer from "./map";

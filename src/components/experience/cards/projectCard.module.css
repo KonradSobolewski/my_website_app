@@ -1,0 +1,19 @@
+.card {
+    width: 450px;
+    margin: 2em 1em;
+}
+
+.media {
+    width: 200px !important;
+    height: 200px !important;
+    padding: 2em !important;
+    margin: 0 auto;
+}
+
+.cardActions {
+    float: right;
+}
+
+.typo {
+    margin: 1em 0;
+}

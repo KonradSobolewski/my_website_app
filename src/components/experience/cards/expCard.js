@@ -15,8 +15,6 @@ const ExpCard = props => (
                 component="img"
                 alt="Company"
                 className={classes.media}
-                height="140"
-                width="300"
                 image={props.image}
                 title={props.title}
             />

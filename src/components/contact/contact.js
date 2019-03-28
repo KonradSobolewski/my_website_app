@@ -13,6 +13,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div>
+                <h3 style={{display: 'flex', justifyContent: 'center', color: '#3d354b'}}>You can find me on:</h3>
                 <div className={classes.contact}>
                     <div className={classes.iconArea}>
                         <a href={"mailto:konradsob12@gmail.com"} className={classes.href}>

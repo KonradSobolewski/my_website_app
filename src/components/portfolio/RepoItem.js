@@ -5,7 +5,7 @@ import {
     ExpansionPanelSummary,
     Tooltip
 } from '@material-ui/core';
-import classes from './RepoItem.module.css';
+import classes from './RepoItem.module.scss';
 import Chip from '@material-ui/core/Chip';
 import {Star} from '@material-ui/icons'
 
@@ -15,15 +15,15 @@ function formatDate(date) {
 }
 
 const RepoItem = props => (
-    <ExpansionPanel>
+    <ExpansionPanel className={classes.panel}>
         <ExpansionPanelSummary classes={{content: classes.Summary}}>
 
             <div className={classes.textField}>
                 {props.repository.name}
             </div>
 
-            <div>
-                <Tooltip title='Stargazers' className={classes.Tooltip}>
+            <div className={classes.hide}>
+                <Tooltip title='Stargazers' className={classes.TooltipHide}>
                     <Chip icon={<Star/>}
                           label={props.repository.stargazers_count}
                           color="secondary"/>

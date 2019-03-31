@@ -1,13 +1,61 @@
 .header {
   display: flex;;
   align-items: center;
-  background: url("../../assets/images/background.jpg") no-repeat center ;
+  background: url("../../assets/images/background.jpg") no-repeat right;
   background-size: cover;
   height: 24em;
+  @media only screen and (max-width: 1500px) {
+    height: 20em;
+  }
+  @media only screen and (max-width: 1280px) {
+    height: 17em;
+  }
+  @media only screen and (max-width: 950px) {
+    height: 14em;
+  }
+  @media only screen and (max-width: 800px) {
+    height: 13em;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 10em;
+  }
+  @media only screen and (max-width: 450px) {
+    height: 7em;
+  }
 }
 
 .avatar {
   margin: 2em 5em 2em 15em;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: url("../../assets/images/zdj.png") no-repeat center;
+  background-size: cover;
+  @media only screen and (max-width: 1500px) {
+    margin: 2em 5em 2em 10em;
+    width: 180px;
+    height: 180px;
+  }
+  @media only screen and (max-width: 1280px) {
+    margin: 2em 4em 2em 5em;
+    width: 150px;
+    height: 150px;
+  }
+  @media only screen and (max-width: 800px) {
+    margin: 2em 2em 2em 3em;
+    width: 120px;
+    height: 120px;
+  }
+  @media only screen and (max-width: 600px) {
+    margin: 2em 1em 2em 1em;
+    width: 90px;
+    height: 90px;
+  }
+  @media only screen and (max-width: 450px) {
+    margin: 2em 0.5em 2em 0.7em;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @font-face {
@@ -18,13 +66,47 @@
 .name {
   font-size: 3em;
   padding: 0.2em 0;
+  white-space: nowrap;
   color: 	#3d354b;
   font-family: nunito ;
+  @media only screen and (max-width: 1500px) {
+    font-size: 2.5em;
+  }
+  @media only screen and (max-width: 1280px) {
+    font-size: 2em;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 1.5em;
+    padding: 0.1em 0;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 1em;
+    padding: 0.05em 0;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 0.8em;
+  }
 }
 
 .underName {
   @extend .name;
   font-size: 1.5em;
+  white-space: nowrap;
+  @media only screen and (max-width: 1500px) {
+    font-size: 1.2em;
+  }
+  @media only screen and (max-width: 1280px) {
+    font-size: 1em;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 0.9em;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 0.7em;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 0.55em;
+  }
 }
 
 .iconArea {
@@ -32,16 +114,50 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 1500px) {
+    margin: 2em 0 0 3em;
+  }
+  @media only screen and (max-width: 1280px) {
+    margin: 2em 0 0 2.5em;
+  }
+  @media only screen and (max-width: 800px) {
+    margin: 1em 0 0 2em;
+  }
+  @media only screen and (max-width: 600px) {
+    margin: 0.5em 0 0 1em;
+  }
+  @media only screen and (max-width: 450px) {
+    margin: 0.5em 0 0 0.5em;
+  }
 }
 
 .icon {
   width: 4em;
   padding: 1em;
   opacity: 0.6;
-  transition: opacity ease-in-out 0.3s;
   background: fixed center;
+  @media only screen and (max-width: 1500px) {
+    width: 3em;
+  }
+  @media only screen and (max-width: 1280px) {
+    width: 2.5em;
+  }
+  @media only screen and (max-width: 800px) {
+    width: 2em;
+    padding: 0.7em;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 1.7em;
+    padding: 0.5em;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 1.4em;
+  }
+  transition: all 0.2s ease-in-out ;
 }
 
 .icon:hover {
   opacity: 1;
+  transform: scale(1.4);
 }
+

@@ -1,6 +1,5 @@
 import React from 'react'
-import connect from "react-redux/es/connect/connect";
-import * as classes from './experience.scss'
+import * as classes from './experience.module.scss'
 import ExpCard from "./cards/expCard";
 import SellionsLogo from '../../assets/images/sellions.png'
 import AtineaLogo from '../../assets/images/atinea.png'
@@ -17,9 +16,9 @@ class Experience extends React.Component {
 
     render() {
         return (
-            <div style={{display:'flex', justifyContent: 'center', margin: 10}}>
-                <div className={classes.companies}>
-                    <h3 style={{display: 'flex', justifyContent: 'center', color: '#3d354b'}}>Commercial Experience</h3>
+            <div className={classes.container}>
+                <div className={classes.subContainer}>
+                    <h3>Commercial Experience</h3>
                     <ExpCard title={"Sellions"}
                              image={SellionsLogo}
                              description={"Junior Full Stack Developer"}
@@ -38,8 +37,8 @@ class Experience extends React.Component {
                     />
                 </div>
                 <div>
-                    <h3 style={{display: 'flex', justifyContent: 'center', color: '#3d354b'}}>Important projects</h3>
-                    <div style={{display: 'flex'}}>
+                    <h3>Important projects</h3>
+                    <div className={classes.subContainer2}>
                         <ProjectCard title={"YouMeet Backend"}
                                      image={YM}
                                      description={"Backend for university project. The application allows to meet new people by setting a meeting. " +
@@ -58,7 +57,7 @@ class Experience extends React.Component {
                                      learnMoreAction={this.openWebsite}
                         />
                     </div>
-                    <div style={{display: 'flex'}}>
+                    <div className={classes.subContainer2}>
                         <ProjectCard title={"RocketFuel"}
                                      image={RF}
                                      description={"This project was created in co-operation with friend. Main aim was to get experience in mobile field. In brief, " +
@@ -82,10 +81,4 @@ class Experience extends React.Component {
     }
 }
 
-const mapStateToProps = state => ({
-});
-
-const mapDispatchToProps = dispatch => ({
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Experience);
+export default Experience;

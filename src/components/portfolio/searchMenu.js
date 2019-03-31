@@ -31,7 +31,7 @@ class SearchMenu extends Component{
                     <Input id='search-input'
                            defaultValue={"KonradSobolewski"}
                            placeholder={"Give me github login"}
-                           style={{width: '350px'}}
+                           className={classes.input}
                            onChange={event => this.userInputHandler(event.target.value)}
                     />
                 </FormControl>

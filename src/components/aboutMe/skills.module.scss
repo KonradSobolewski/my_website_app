@@ -1,0 +1,36 @@
+.card {
+  margin: 1em 3em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  color: #3d354b;
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+  }
+}
+
+.row:last-child {
+  border-bottom: white 1px solid;
+}
+
+.row{
+  padding: 2em 0 1em 0;
+  display: -webkit-inline-box;
+  border-bottom: #3d354b 1px solid;
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+  }
+}
+
+.title {
+  padding: 0.7em;
+  width: 70px;
+}
+
+.typo {
+  width: 430px;
+  @media only screen and (max-width: 650px) {
+    width: 200px;
+  }
+}

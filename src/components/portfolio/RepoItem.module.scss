@@ -1,0 +1,63 @@
+.Summary {
+    align-items: center;
+
+}
+.panel {
+    transition: transform 1s ease-in-out;
+}
+
+.panel:hover {
+    background: aliceblue;
+}
+
+.Summary > div {
+    box-sizing: border-box;
+    flex-basis: 27%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    @media only screen and (max-width: 600px) {
+        flex-basis: 40%;
+        overflow: visible;
+    }
+}
+
+.Summary > div:first-child {
+    padding-left: 32px;
+    @media only screen and (max-width: 1000px) {
+        padding: 0;
+    }
+}
+.Summary > div:last-child {
+    @media only screen and (max-width: 1000px) {
+        padding-right: 0;
+    }
+}
+
+.textField {
+    max-width: 250px;
+    text-align: left;
+    @media only screen and (max-width: 1000px) {
+       font-size: 0.7em;
+        max-width: 150px;
+    }
+}
+
+.Tooltip {
+    position: relative;
+    float: right;
+    @media only screen and (max-width: 1000px) {
+        padding: 0;
+    }
+}
+
+.hide{
+    display: flex;
+    justify-content: flex-end;
+    @media only screen and (max-width: 1200px) {
+        justify-content: center;
+    }
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}

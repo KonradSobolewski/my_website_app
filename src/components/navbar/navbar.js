@@ -6,14 +6,18 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import Star from '@material-ui/icons/Star';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 import Folder from '@material-ui/icons/Folder';
-import classes from './navbar.module.css'
+import classes from './navbar.module.scss'
 import * as navbarActions from '../../redux/actions/navbar/navbarActions'
 import connect from "react-redux/es/connect/connect";
 import AboutMe from "../aboutMe/aboutMe";
 import Contact from "../contact/contact";
 import Portfolio from "../portfolio/portfolio";
 import Experience from "../experience/experience";
+import {withStyles} from "@material-ui/styles"
 
+const style = {
+
+};
 class NavbarView extends React.Component {
 
     handleChangeView = (event, value) => {
@@ -30,7 +34,7 @@ class NavbarView extends React.Component {
                         indicatorColor="primary"
                         textColor="primary"
                         centered={true}
-                        variant={"fullWidth"}
+                        variant={"standard"}
                     >
                         <Tab label="About Me" icon={<PersonPinIcon/>}/>
                         <Tab label="Experience" icon={<Star/>}/>
@@ -55,4 +59,4 @@ const mapDispatchToProps = dispatch => ({
     onViewChange: value => dispatch(navbarActions.setView(value)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(NavbarView);
+export default connect(mapStateToProps, mapDispatchToProps)(withStyles(style)(NavbarView));

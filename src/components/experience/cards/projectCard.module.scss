@@ -3,6 +3,9 @@
     margin: 1em;
     position: relative;
     padding-bottom: 2em;
+    @media only screen and (max-width: 600px) {
+        width: 300px;
+    }
 }
 
 .media {
@@ -10,6 +13,10 @@
     height: 200px !important;
     padding: 2em !important;
     margin: 0 auto;
+    @media only screen and (max-width: 600px) {
+        width: 150px !important;
+        height: 150px !important;
+    }
 }
 
 .cardActions {

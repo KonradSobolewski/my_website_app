@@ -1,0 +1,30 @@
+.groupProject {
+    display: flex;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 1400px) {
+    display: grid;
+  }
+}
+.subContainer {
+  @media only screen and (max-width: 1400px) {
+    justify-content: center;
+    display: grid;
+  }
+}
+
+.subContainer2 {
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 900px) {
+    display: grid;
+  }
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: #3d354b
+}

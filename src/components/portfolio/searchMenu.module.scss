@@ -10,12 +10,28 @@
   margin: 2em auto;
   background: white;
   max-width: 50%;
-  min-width: 600px;
+  min-width: 350px;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+.searchMenu:hover {
+  transform: scale(1.1);
+}
+.searchMenu:focus-within  {
+  transform: scale(1.1);
 }
 
+.input {
+  width: 300px;
+  @media only screen and (max-width: 1000px) {
+    width: 150px;
+  }
+}
 .fab {
-margin: 0 2em;
+  margin: 0 2em;
+  @media only screen and (max-width: 1000px) {
+    margin: 0 0.2em;
+  }
 }
 .sendIcon {
   margin: 0 0.5em;

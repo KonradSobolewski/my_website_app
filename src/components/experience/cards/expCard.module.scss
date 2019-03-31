@@ -1,0 +1,26 @@
+.card {
+    width: 450px;
+    margin: 1em 2em 2em 3em;
+    justify-content: center;
+    @media only screen and (max-width: 600px) {
+        width: 300px;
+    }
+}
+
+.media {
+    width: 70% !important;
+    height: 45px !important;
+    padding: 2em !important;
+    @media only screen and (max-width: 600px) {
+        height: 35px !important;
+    }
+}
+
+.cardActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.typo {
+    margin: 1em 0;
+}

@@ -8,7 +8,6 @@ import * as Config from "../../config/config"
 import * as classes from "./contact.module.scss";
 
 class GoogleMapsContainer extends React.Component {
-
     onMarkerClick = (props, marker, e) => {
         this.props.setSelectedPlace(props);
         this.props.setActiveMarker(marker);
@@ -23,9 +22,9 @@ class GoogleMapsContainer extends React.Component {
     };
 
     render() {
-        const style = {
+        let style = {
             width: '100%',
-            height: '50vh'
+            height: '45vh'
         };
         return (
             <Map

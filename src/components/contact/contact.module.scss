@@ -1,3 +1,14 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .contact {
   padding: 0 2em 2em 2em;
   display: grid;
@@ -7,6 +18,17 @@
 
 .iconArea {
   display: flex;
+  animation-duration: 0.5s; /* the duration of the animation */
+  animation-timing-function: ease-in-out; /* how the animation will behave */
+  animation-delay: 0s; /* how long to delay the animation from starting */
+  animation-iteration-count: 1; /* how many times the animation will play */
+  animation-name: fadeIn; /* the name of the animation we defined above */
+  -webkit-animation-duration: 0.5s; /* the duration of the animation */
+  -webkit-animation-timing-function: ease-in-out; /* how the animation will behave */
+  -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
+  -webkit-animation-iteration-count: 1; /* how many times the animation will play */
+  -webkit-animation-name: fadeIn; /* the name of the animation we defined above */
+  transition: all 0.2s ease-in-out ;
 }
 
 .href {
@@ -26,14 +48,14 @@
   justify-content: center;
   align-items: center;
   @media only screen and (max-width: 800px) {
-    width: 16em;
-    height: 10em;
+    width: 14em;
+    height: 9em;
   }
   @media only screen and (max-width: 600px) {
-    width: 10em;
-    height: 6em;
+    width: 8em;
+    height: 5em;
   }
-  transition: transform 0.2s ease-in-out ;
+  transition: all 0.2s ease-in-out ;
 }
 .card:hover {
   transform: scale(1.2);

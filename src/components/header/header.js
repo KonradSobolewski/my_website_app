@@ -11,8 +11,10 @@ class Header extends React.Component {
             <div className={css.header}>
                 <div className={css.avatar}/>
                 <div className={css.title}>
-                    <div className={css.name}>Konrad Sobolewski</div>
+                    <div className={css.name}>B.Sc. Konrad Sobolewski</div>
                     <div className={css.underName}>Junior Full Stack Developer</div>
+                    <div className={css.underName}>Warsaw University Of Technology</div>
+                    <div className={css.underName}>Faculty of Electronics and Information Technology</div>
                 </div>
                 <div className={css.iconArea}>
                     <a href={"https://www.linkedin.com/in/konrad-sobolewski-ba380a160/"} target={"_blank"}><img className={css.icon} src={linkedin} alt={"LOL"}/></a>

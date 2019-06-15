@@ -4,12 +4,10 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import PhoneIcon from '@material-ui/icons/Phone';
 import Star from '@material-ui/icons/Star';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
 import Folder from '@material-ui/icons/Folder';
 import classes from './navbar.module.scss'
 import * as navbarActions from '../../redux/actions/navbar/navbarActions'
 import connect from "react-redux/es/connect/connect";
-import AboutMe from "../aboutMe/aboutMe";
 import Contact from "../contact/contact";
 import Portfolio from "../portfolio/portfolio";
 import Experience from "../experience/experience";
@@ -34,18 +32,16 @@ class NavbarView extends React.Component {
                         indicatorColor="primary"
                         textColor="primary"
                         centered={true}
-                        variant={"standard"}
+                        variant={"fullWidth"}
                     >
-                        <Tab label="About Me" icon={<PersonPinIcon/>}/>
                         <Tab label="Experience" icon={<Star/>}/>
                         <Tab label="Portfolio" icon={<Folder/>}/>
                         <Tab label="Contact" icon={<PhoneIcon/>}/>
                     </Tabs>
                 </AppBar>
-                {this.props.view === 0 && <AboutMe/>}
-                {this.props.view === 1 && <Experience/>}
-                {this.props.view === 2 && <Portfolio/>}
-                {this.props.view === 3 && <Contact/>}
+                {this.props.view === 0 && <Experience/>}
+                {this.props.view === 1 && <Portfolio/>}
+                {this.props.view === 2 && <Contact/>}
             </div>
         );
     }

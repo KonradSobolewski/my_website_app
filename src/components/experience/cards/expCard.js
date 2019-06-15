@@ -26,7 +26,7 @@ const ExpCard = props => (
                     {props.description}
                 </Typography>
                 <Typography component="p" gutterBottom >
-                   Stack: {props.stack}
+                   {props.stack}
                 </Typography>
             </CardContent>
         </CardActionArea>

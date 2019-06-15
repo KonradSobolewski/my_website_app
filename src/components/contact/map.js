@@ -31,8 +31,8 @@ class GoogleMapsContainer extends React.Component {
                 style={style}
                 google={this.props.google}
                 onClick={this.onMapClick}
-                zoom={13}
-                initialCenter={{lat: 52.237049, lng: 21.017532}}
+                zoom={14}
+                initialCenter={{lat: 52.225000, lng: 21.00000}}
                 className={classes.mapContainer}
             >
                 <Marker
@@ -44,7 +44,7 @@ class GoogleMapsContainer extends React.Component {
                 <Marker
                     onClick={this.onMarkerClick}
                     title={'Actual work Place'}
-                    position={{lat: 52.252171, lng: 21.038533}}
+                    position={{lat: 52.232249, lng: 20.987971}}
                     name={'Company: Sellions'}
                 />
                 <InfoWindow

@@ -63,12 +63,17 @@
   src: url(../../assets/fonts/Nunito-Regular.ttf);
 }
 
+@font-face {
+  font-family: MuliRegular;
+  src: url(../../assets/fonts/Muli-Regular.ttf);
+}
+
 .name {
   font-size: 3em;
   padding: 0.2em 0;
   white-space: nowrap;
   color: 	#3d354b;
-  font-family: nunito ;
+  font-family: MuliRegular ;
   @media only screen and (max-width: 1500px) {
     font-size: 2.5em;
   }

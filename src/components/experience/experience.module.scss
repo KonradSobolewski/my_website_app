@@ -1,7 +1,13 @@
+@font-face {
+  font-family: MuliRegular;
+  src: url(../../assets/fonts/Muli-Regular.ttf);
+}
+
 .groupProject {
     display: flex;
 }
 .container {
+  margin-top: 2em;
   display: flex;
   justify-content: center;
   @media only screen and (max-width: 1400px) {
@@ -23,8 +29,17 @@
   }
 }
 
+.aboutMeContainer{
+  display: flex;
+  justify-content: center;
+}
+
 h3 {
   display: flex;
   justify-content: center;
   color: #3d354b
+}
+
+.chip {
+  margin: 5px;
 }

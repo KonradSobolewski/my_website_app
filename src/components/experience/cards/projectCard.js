@@ -23,7 +23,7 @@ const ProjectCard = props => (
                     {props.title}
                 </Typography>
                 <Typography variant="h5" component="h3" gutterBottom align={"center"}>
-                    Technology: {props.technology}
+                    {props.technology}
                 </Typography>
                 <Typography component="p" gutterBottom>
                     {props.description}

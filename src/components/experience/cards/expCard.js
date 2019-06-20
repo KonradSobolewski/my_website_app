@@ -25,17 +25,17 @@ const ExpCard = props => (
                 <Typography variant="h5" component="h2" gutterBottom>
                     {props.description}
                 </Typography>
-                <Typography component="p" gutterBottom >
+                <Typography component="p" gutterBottom align={"center"} className={classes.stack}>
                    {props.stack}
                 </Typography>
             </CardContent>
         </CardActionArea>
         <CardActions  className={classes.cardActions}>
-            <div >
+            <div>
                 {props.date}
             </div>
             <div>
-            <Button size="small" color="primary" onClick={() => props.learnMoreAction(props.website)} >
+            <Button size="small" color="primary" onClick={() => props.learnMoreAction(props.website)}>
                 Learn More
             </Button>
             </div>

@@ -3,35 +3,24 @@
   src: url(../../assets/fonts/Muli-Regular.ttf);
 }
 
-.groupProject {
-    display: flex;
-}
 .container {
   margin-top: 2em;
-  display: flex;
+  display: grid;
   justify-content: center;
-  @media only screen and (max-width: 1400px) {
-    display: grid;
+  >.subContainer {
+    @media only screen and (max-width: 1400px) {
+      justify-content: center;
+      display: grid;
+    }
   }
-}
-.subContainer {
-  @media only screen and (max-width: 1400px) {
+
+  >.subContainer2 {
+    display: flex;
     justify-content: center;
-    display: grid;
+    @media only screen and (max-width: 900px) {
+      display: grid;
+    }
   }
-}
-
-.subContainer2 {
-  display: flex;
-  justify-content: center;
-  @media only screen and (max-width: 900px) {
-    display: grid;
-  }
-}
-
-.aboutMeContainer{
-  display: flex;
-  justify-content: center;
 }
 
 h3 {

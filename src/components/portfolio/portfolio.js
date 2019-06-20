@@ -10,7 +10,7 @@ class Portfolio extends React.Component {
 
         const repoList = (
             <div>
-               <RepoList repositories={this.props.repositories}/>
+                <RepoList repositories={this.props.repositories}/>
             </div>
         );
         return (
@@ -20,7 +20,8 @@ class Portfolio extends React.Component {
                     (<div className={classes.progress}>
                         <CircularProgress size={100}/>
                     </div>) :
-                    this.props.error !== null ? (<div className={classes.progress}>Sorry something went wrong :(</div>) :
+                    this.props.error !== null ? (
+                            <div className={classes.progress}>Sorry something went wrong</div>) :
                         repoList
                 }
             </div>

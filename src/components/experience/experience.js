@@ -33,6 +33,7 @@ import Slider from "./slider";
 import {withStyles} from "@material-ui/core";
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Fade from 'react-reveal/Fade'
 
 const styles = {
     root: {
@@ -43,26 +44,12 @@ const styles = {
 
 class Experience extends React.Component {
     openWebsite = (url) => {
-        let win = window.open(url, '_blank');
+        const win = window.open(url, '_blank');
         win.focus();
     };
 
     render() {
         const {classes} = this.props;
-
-        const schools = [
-            {
-                title: "B.Sc. in Automation and robotics",
-                year: "2014 - 2018 y. — ",
-                desc: "Faculty of Electronics and Information Technology"
-            },
-            {
-                title: "M.Sc. Information Technology",
-                year: "since 2019 y. — ",
-                desc: "Faculty of Electronics and Information Technology"
-            }
-        ];
-
         const backend = [JAVA, SPRING, HIBERNATE, KOTLIN, PSQL, MYSQL, PHP];
         const frontend = [REACT2, ANGULAR, JS, TS, CSS3, HTML];
         const mobile = [REACT2, ANDROID];
@@ -109,10 +96,10 @@ class Experience extends React.Component {
             <div>
                 <Slider languages={backend} title={"BACKEND"} leftSide={true} elements={5} color={'#90caf9'}/>
                 <Slider languages={frontend} title={"FRONTEND"} leftSide={false} elements={5} color={'#ef5350'}/>
-                <Slider languages={mobile} title={"MOBILE"} leftSide={true} elements={2} color={'#C5D2EB'}/>
+                <Slider languages={mobile} title={"MOBILE"} leftSide={true} elements={2} color={'#ebe2b0'}/>
                 <Slider languages={other} title={"OTHER"} leftSide={false} elements={5} color={'#8FFFBF'}/>
                 <div className={css.container}>
-                    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+                    <Fade bottom>
                         <h3>Commercial Experience</h3>
                         <div className={css.subContainer2}>
                             <ExpCard title={"Sellions"}
@@ -132,6 +119,8 @@ class Experience extends React.Component {
                                      learnMoreAction={this.openWebsite}
                             />
                         </div>
+                    </Fade>
+                    <Fade bottom>
                         <h3>Important projects</h3>
                         <div className={css.subContainer2}>
                             <ProjectCard title={"YouMeet Backend"}
@@ -152,6 +141,8 @@ class Experience extends React.Component {
                                          learnMoreAction={this.openWebsite}
                             />
                         </div>
+                    </Fade>
+                    <Fade bottom>
                         <div className={css.subContainer2}>
                             <ProjectCard title={"RocketFuel"}
                                          image={RF}
@@ -170,7 +161,7 @@ class Experience extends React.Component {
                                          learnMoreAction={this.openWebsite}
                             />
                         </div>
-                    </ScrollAnimation>
+                    </Fade>
                 </div>
             </div>
         );

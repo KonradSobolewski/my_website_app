@@ -47,7 +47,7 @@ export default class SwipeToSlide extends Component {
                 <div className={css.container}>
                     <Slider {...settings}>
                         {this.props.languages.map(item => {
-                            return <img src={item} className={css.logo}/>
+                            return <img src={item} className={css.logo} alt={"Ups"}/>
                         })}
                     </Slider>
                 </div>

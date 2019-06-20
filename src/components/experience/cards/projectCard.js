@@ -19,7 +19,7 @@ const ProjectCard = props => (
                 title={props.title}
             />
             <CardContent>
-                <Typography gutterBottom variant="h4" component="h2" align={"center"}>
+                <Typography gutterBottom variant="h5" component="h4" align={"center"}>
                     {props.title}
                 </Typography>
                 <Typography variant="h5" component="h3" gutterBottom align={"center"}>

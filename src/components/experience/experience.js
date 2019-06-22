@@ -32,8 +32,8 @@ import {Done} from "@material-ui/icons";
 import Slider from "./slider";
 import {withStyles} from "@material-ui/core";
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
 import Fade from 'react-reveal/Fade'
+import TextService from "../../config/text.service";
 
 const styles = {
     root: {
@@ -94,19 +94,19 @@ class Experience extends React.Component {
         });
         return (
             <div>
-                <Slider languages={backend} title={"BACKEND"} leftSide={true} elements={5} color={'#90caf9'}/>
-                <Slider languages={frontend} title={"FRONTEND"} leftSide={false} elements={5} color={'#ef5350'}/>
-                <Slider languages={mobile} title={"MOBILE"} leftSide={true} elements={2} color={'#ebe2b0'}/>
-                <Slider languages={other} title={"OTHER"} leftSide={false} elements={5} color={'#8FFFBF'}/>
+                <Slider languages={backend} title={TextService.text.backend.toUpperCase()} leftSide={true} elements={5} color={'#90caf9'}/>
+                <Slider languages={frontend} title={TextService.text.frontend.toUpperCase()} leftSide={false} elements={5} color={'#ef5350'}/>
+                <Slider languages={mobile} title={TextService.text.mobile.toUpperCase()} leftSide={true} elements={2} color={'#ebe2b0'}/>
+                <Slider languages={other} title={TextService.text.other.toUpperCase()} leftSide={false} elements={5} color={'#8FFFBF'}/>
                 <div className={css.container}>
                     <Fade bottom>
-                        <h3>Commercial Experience</h3>
+                        <h3>{TextService.text.commercialExp}</h3>
                         <div className={css.subContainer2}>
                             <ExpCard title={"Sellions"}
                                      image={SellionsLogo}
                                      description={"Junior Full Stack Developer"}
                                      stack={sellionsTech}
-                                     date={"July 2018 - Currently"}
+                                     date={TextService.text.sellionsDate}
                                      website={"https://www.sellions.com/"}
                                      learnMoreAction={this.openWebsite}
                             />
@@ -114,28 +114,25 @@ class Experience extends React.Component {
                                      image={AtineaLogo}
                                      description={"Junior Software Developer"}
                                      stack={atineaTech}
-                                     date={"July 2017 - November 2017"}
+                                     date={TextService.text.atineaDate}
                                      website={"https://atinea.pl/"}
                                      learnMoreAction={this.openWebsite}
                             />
                         </div>
                     </Fade>
                     <Fade bottom>
-                        <h3>Important projects</h3>
+                        <h3>{TextService.text.projects}</h3>
                         <div className={css.subContainer2}>
                             <ProjectCard title={"YouMeet Backend"}
                                          image={YM}
-                                         description={"Backend for university project. The application allows to meet new people by setting a meeting. " +
-                                         "From the technical side, backend is based on json binary object (jsonb) data format. It allows to store parameters as json objects in postgres database. " +
-                                         "In conclusion it works as semi-NoSQL storage."}
+                                         description={TextService.text.youMeetBackendDesc}
                                          technology={youMeetBack}
                                          website={"https://github.com/KonradSobolewski/YouMeet_backend"}
                                          learnMoreAction={this.openWebsite}
                             />
                             <ProjectCard title={"YouMeet Mobile"}
                                          image={YM}
-                                         description={"Frontend for university project. The application uses facebook api, google map api. It was first touch with react's syntax " +
-                                         "and unfortunately redux implementation turn out as failure. But after all it was great possibility to gather experience."}
+                                         description={TextService.text.youMeetMobileDesc}
                                          technology={youMeetFront}
                                          website={"https://github.com/KonradSobolewski/YouMeet_mobile"}
                                          learnMoreAction={this.openWebsite}
@@ -146,16 +143,14 @@ class Experience extends React.Component {
                         <div className={css.subContainer2}>
                             <ProjectCard title={"RocketFuel"}
                                          image={RF}
-                                         description={"This project was created in co-operation with friend. Main aim was to get experience in mobile field. In brief, " +
-                                         "the application was designed to serve as a gym manager for bodybuilders. We implemented connection with Firebase authorization, data storage, google login api, google calendar api. " +
-                                         "To sum up in our humble opinion kotlin is beautiful language with bigger possibilities than Java."}
+                                         description={TextService.text.rocketFuelDesc}
                                          technology={rocketFuelTech}
                                          website={"https://github.com/KonradSobolewski/RocketFuel-Training-Manager"}
                                          learnMoreAction={this.openWebsite}
                             />
-                            <ProjectCard title={"My Website"}
+                            <ProjectCard title={TextService.text.myWeb}
                                          image={REACT2}
-                                         description={"A lot of love , effort and passion to design simple, responsive and to the point website. The website uses Material UI, Redux and SCSS."}
+                                         description={TextService.text.myWebDesc}
                                          technology={webSiteTech}
                                          website={"https://github.com/KonradSobolewski/my_website_app"}
                                          learnMoreAction={this.openWebsite}

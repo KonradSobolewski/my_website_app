@@ -2,70 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6558f1-6ac8-4d0e-8958-eae1073c1e0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Muli-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Muli-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Muli-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Muli-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/React-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/android.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/angular-icon-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/bitbucket-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/bootstrap-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/css3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/firebase-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/git-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/github-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/hibernate.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/html5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/intellij-idea-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/java-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/javascript.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/jira-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/kotlin-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/mysql.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/php-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/postgresql.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/spring-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lang/typescript.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/experience/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/experience/slider.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/text.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/text.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/language/languageActionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/language/languageActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/language/languageReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/world.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/eiti.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/elka.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gmach.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gmach1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gmach2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gmachFull.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/hobbies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/hol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/ja.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/world.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/aboutMe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/aboutMe.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/infoCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/infoCard.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/schoolItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/schoolItem.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/skills.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/skills.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/contact.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/contact.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/lang/React-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/lang/React-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/lang/github-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/lang/github-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contact/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/experience/cards/expCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience/cards/expCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/experience/cards/expCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience/cards/expCard.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/experience/cards/projectCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience/cards/projectCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/experience/cards/projectCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience/cards/projectCard.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/experience/experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience/experience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/experience/experience.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience/experience.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/navbar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portfolio/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portfolio/searchMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/searchMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -80,74 +39,76 @@
     <session id="-818232806">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.52" value="1" />
-          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.53" value="2" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.55" value="2" />
           <entry key="project.open.time.58" value="2" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.88" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="15" />
+          <entry key="css" value="17" />
           <entry key="gif" value="2" />
-          <entry key="html" value="4" />
+          <entry key="html" value="5" />
           <entry key="ico" value="1" />
           <entry key="jpeg" value="1" />
-          <entry key="jpg" value="8" />
-          <entry key="js" value="102" />
-          <entry key="json" value="8" />
-          <entry key="png" value="9" />
-          <entry key="scss" value="66" />
-          <entry key="svg" value="10" />
+          <entry key="jpg" value="9" />
+          <entry key="js" value="173" />
+          <entry key="json" value="12" />
+          <entry key="png" value="13" />
+          <entry key="scss" value="81" />
+          <entry key="svg" value="13" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="15" />
-          <entry key="HTML" value="4" />
-          <entry key="Image" value="21" />
-          <entry key="JSON" value="8" />
-          <entry key="JavaScript" value="102" />
-          <entry key="SCSS" value="66" />
-          <entry key="SVG" value="10" />
+          <entry key="CSS" value="17" />
+          <entry key="HTML" value="5" />
+          <entry key="Image" value="26" />
+          <entry key="JSON" value="12" />
+          <entry key="JavaScript" value="173" />
+          <entry key="SCSS" value="81" />
+          <entry key="SVG" value="13" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="13" />
+          <entry key="ESLintLanguageService" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="618" />
+          <entry key="css" value="631" />
           <entry key="html" value="45" />
-          <entry key="js" value="11084" />
-          <entry key="json" value="95" />
-          <entry key="scss" value="3010" />
+          <entry key="js" value="14437" />
+          <entry key="json" value="2274" />
+          <entry key="scss" value="3573" />
           <entry key="svg" value="2" />
-          <entry key="txt" value="128" />
+          <entry key="txt" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="618" />
+          <entry key="CSS" value="631" />
           <entry key="HTML" value="45" />
-          <entry key="JSON" value="95" />
-          <entry key="JavaScript" value="11084" />
-          <entry key="PLAIN_TEXT" value="128" />
-          <entry key="SCSS" value="3010" />
+          <entry key="JSON" value="2274" />
+          <entry key="JavaScript" value="14437" />
+          <entry key="PLAIN_TEXT" value="139" />
+          <entry key="SCSS" value="3573" />
           <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
@@ -161,10 +122,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/experience/slider.js">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+            <state relative-caret-position="184">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/redux/actions/language/languageActionTypes.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/config/text.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="28" column="315" selection-start-line="28" selection-start-column="315" selection-end-line="28" selection-end-column="315" />
             </state>
           </provider>
         </entry>
@@ -172,8 +171,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/experience/experience.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="56" column="72" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="72" />
+            <state relative-caret-position="134">
+              <caret line="152" column="80" selection-start-line="152" selection-start-column="80" selection-end-line="152" selection-end-column="80" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -181,11 +180,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/redux/actions/language/languageActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+            <state>
+              <caret column="40" selection-start-column="40" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/experience/cards/expCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="815">
+              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/header/header.module.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/experience/cards/projectCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-588">
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -199,8 +227,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -212,6 +240,8 @@
       <find>display: flex;</find>
       <find>fill</find>
       <find>Nuni</find>
+      <find>typo</find>
+      <find>T</find>
     </findStrings>
     <replaceStrings>
       <replace>css</replace>
@@ -224,36 +254,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/portfolio/portfolio.module.scss" />
-        <option value="$PROJECT_DIR$/src/redux/reducers/searchMenu/searchReducer.js" />
-        <option value="$PROJECT_DIR$/src/components/portfolio/portfolio.js" />
-        <option value="$PROJECT_DIR$/src/components/portfolio/RepoItem.module.css" />
-        <option value="$PROJECT_DIR$/src/components/portfolio/RepoList.js" />
-        <option value="$PROJECT_DIR$/src/components/portfolio/RepoList.module.scss" />
-        <option value="$PROJECT_DIR$/src/redux/actions/searchMenu/searchActions.js" />
-        <option value="$PROJECT_DIR$/src/components/experience/cards/sellions.js" />
-        <option value="$PROJECT_DIR$/src/components/experience/cards/sellions.module.css" />
-        <option value="$PROJECT_DIR$/src/components/experience/experience.css" />
-        <option value="$PROJECT_DIR$/src/components/experience/cards/projectCard.module.css" />
-        <option value="$PROJECT_DIR$/src/components/aboutMe/infoCard.css" />
-        <option value="$PROJECT_DIR$/src/components/aboutMe/infoCard.js" />
-        <option value="$PROJECT_DIR$/src/components/aboutMe/skills.js" />
-        <option value="$PROJECT_DIR$/src/components/contact/contact.js" />
-        <option value="$PROJECT_DIR$/src/components/experience/cards/expCard.module.css" />
-        <option value="$PROJECT_DIR$/src/components/portfolio/searchMenu.js" />
-        <option value="$PROJECT_DIR$/src/components/experience/experience.scss" />
-        <option value="$PROJECT_DIR$/src/components/portfolio/searchMenu.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/portfolio/RepoItem.js" />
-        <option value="$PROJECT_DIR$/src/components/portfolio/RepoItem.module.scss" />
         <option value="$PROJECT_DIR$/src/components/aboutMe/skills.module.scss" />
         <option value="$PROJECT_DIR$/src/components/aboutMe/schoolItem.module.scss" />
         <option value="$PROJECT_DIR$/src/components/aboutMe/schoolItem.js" />
         <option value="$PROJECT_DIR$/src/components/aboutMe/infoCard.module.scss" />
-        <option value="$PROJECT_DIR$/src/config/config.js" />
         <option value="$PROJECT_DIR$/src/components/aboutMe/aboutMe.module.scss" />
         <option value="$PROJECT_DIR$/src/components/aboutMe/aboutMe.js" />
-        <option value="$PROJECT_DIR$/src/components/navbar/navbar.js" />
-        <option value="$PROJECT_DIR$/src/components/contact/map.js" />
         <option value="$PROJECT_DIR$/src/components/experience/skills.js" />
         <option value="$PROJECT_DIR$/src/assets/lang/postgresql-inc.svg" />
         <option value="$PROJECT_DIR$/src/assets/lang/postgresql.svg" />
@@ -264,17 +270,41 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/assets/lang/React-icon.svg" />
         <option value="$PROJECT_DIR$/src/components/experience/slider.module.scss" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/experience/slider.js" />
+        <option value="$PROJECT_DIR$/src/components/experience/cards/projectCard.module.scss" />
+        <option value="$PROJECT_DIR$/src/components/experience/cards/expCard.module.scss" />
         <option value="$PROJECT_DIR$/src/components/contact/contact.module.scss" />
+        <option value="$PROJECT_DIR$/src/components/portfolio/RepoItem.module.scss" />
+        <option value="$PROJECT_DIR$/src/components/portfolio/RepoList.js" />
+        <option value="$PROJECT_DIR$/src/redux/actions/searchMenu/searchActions.js" />
+        <option value="$PROJECT_DIR$/src/components/experience/experience.module.scss" />
+        <option value="$PROJECT_DIR$/src/redux/actions/language.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/googleMap/mapReducer.js" />
+        <option value="$PROJECT_DIR$/src/config/text.js" />
+        <option value="$PROJECT_DIR$/src/config/config.js" />
+        <option value="$PROJECT_DIR$/src/redux/actions/language/languageActionTypes.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/language/languageReducer.js" />
+        <option value="$PROJECT_DIR$/src/config/text.service.js" />
+        <option value="$PROJECT_DIR$/src/redux/actions/header/headerActions.js" />
+        <option value="$PROJECT_DIR$/src/redux/actions/header/headerActionTypes.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/header/headerReducer.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/header/header.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/components/navbar/navbar.module.scss" />
+        <option value="$PROJECT_DIR$/src/components/portfolio/portfolio.js" />
+        <option value="$PROJECT_DIR$/src/components/navbar/navbar.js" />
+        <option value="$PROJECT_DIR$/src/components/portfolio/searchMenu.js" />
+        <option value="$PROJECT_DIR$/src/components/contact/contact.js" />
+        <option value="$PROJECT_DIR$/src/components/contact/map.js" />
         <option value="$PROJECT_DIR$/src/components/experience/cards/projectCard.js" />
         <option value="$PROJECT_DIR$/src/components/experience/cards/expCard.js" />
-        <option value="$PROJECT_DIR$/src/components/experience/experience.js" />
-        <option value="$PROJECT_DIR$/src/components/navbar/navbar.module.scss" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/redux/actions/language/languageActions.js" />
         <option value="$PROJECT_DIR$/src/components/header/header.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/experience/experience.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/experience/cards/expCard.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/experience/cards/projectCard.module.scss" />
-        <option value="$PROJECT_DIR$/src/components/experience/slider.js" />
-        <option value="$PROJECT_DIR$/src/components/header/header.js" />
+        <option value="$PROJECT_DIR$/src/components/experience/experience.js" />
+        <option value="$PROJECT_DIR$/src/config/text.json" />
       </list>
     </option>
   </component>
@@ -295,9 +325,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1541" />
-    <option name="width" value="1850" />
-    <option name="height" value="1043" />
+    <option name="y" value="-1" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -305,7 +335,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,68 +363,79 @@
               <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="contact" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="experience" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="experience" type="462c0819:PsiDirectoryNode" />
-              <item name="cards" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+              <item name="language" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+              <item name="searchMenu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="googleMap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="language" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_website_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_website_app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="searchMenu" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,22 +445,24 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/experience" />
-      <recent name="$PROJECT_DIR$/src/redux/reducers/searchMenu" />
-      <recent name="$PROJECT_DIR$/src/redux/actions/searchMenu" />
-      <recent name="$PROJECT_DIR$/src/components/portfolio" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/assets/lang" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
+      <recent name="$PROJECT_DIR$/src/components/portfolio" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/redux/actions/language" />
+      <recent name="$PROJECT_DIR$/src/components/experience" />
+      <recent name="$PROJECT_DIR$/src/redux/reducers/searchMenu" />
+      <recent name="$PROJECT_DIR$/src/redux/actions/searchMenu" />
       <recent name="$PROJECT_DIR$/src/components/portfolio" />
     </key>
   </component>
@@ -435,6 +477,25 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.renders without crashing" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -459,7 +520,11 @@
       <workItem from="1555016801849" duration="599000" />
       <workItem from="1558190631762" duration="596000" />
       <workItem from="1560451286663" duration="902000" />
-      <workItem from="1560602812551" duration="23732000" />
+      <workItem from="1560602812551" duration="25643000" />
+      <workItem from="1560692399485" duration="681000" />
+      <workItem from="1560969246739" duration="9864000" />
+      <workItem from="1561144918878" duration="11617000" />
+      <workItem from="1561205716738" duration="9912000" />
     </task>
     <task id="LOCAL-00001" summary="list of repos">
       <created>1552859857776</created>
@@ -517,30 +582,67 @@
       <option name="project" value="LOCAL" />
       <updated>1555017384618</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="better ui">
+      <created>1560637380391</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560637380391</updated>
+    </task>
+    <task id="LOCAL-00010" summary="better ui">
+      <created>1560638626076</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560638626076</updated>
+    </task>
+    <task id="LOCAL-00011" summary="better ui 2">
+      <created>1561036496017</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1561036496017</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="renders_without_crashing - 2019.06.19 at 20h 45m 40s.xml">
+      <configuration name="renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_without_crashing - 2019.06.19 at 20h 48m 12s.xml">
+      <configuration name="renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_without_crashing - 2019.06.19 at 20h 55m 24s.xml">
+      <configuration name="renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_without_crashing - 2019.06.19 at 20h 57m 00s.xml">
+      <configuration name="renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106998000" />
+    <option name="totallyTimeSpent" value="140983000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-1" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="top" id="npm" order="0" weight="0.32964602" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Structure" order="0" sideWeight="0.37321427" side_tool="true" weight="0.24986821" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.62566847" visible="true" weight="0.24986821" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32964602" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31969026" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49973643" visible="true" weight="0.31637168" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33628318" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49973643" weight="0.32383123" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36145952" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002636" side_tool="true" weight="0.30960086" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -587,109 +689,34 @@
     <MESSAGE value="descriptions" />
     <MESSAGE value="responsive design" />
     <MESSAGE value="hide sensitive data" />
-    <option name="LAST_COMMIT_MESSAGE" value="hide sensitive data" />
+    <MESSAGE value="better ui" />
+    <MESSAGE value="better ui 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="better ui 2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/experience/skills.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/portfolio/portfolio.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/portfolio/RepoList.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/portfolio/searchMenu.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/portfolio/RepoItem.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/lang/c.svg">
+    <entry file="file://$PROJECT_DIR$/src/assets/images/sellions.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/lang/css3.svg">
+    <entry file="file://$PROJECT_DIR$/src/assets/images/world.png" />
+    <entry file="file://$PROJECT_DIR$/src/assets/images/zdj.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/lang/postgresql-inc.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/lang/postgresql.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/lang/php-1.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/lang/bootstrap-4.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/lang/git-icon.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/world.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/React-icon.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/assets/images/fb.png" />
+    <entry file="file://$PROJECT_DIR$/src/assets/images/github.png" />
+    <entry file="file://$PROJECT_DIR$/src/assets/images/linkedin.png" />
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/lang/React-icon.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+    <entry file="file://$PROJECT_DIR$/src/assets/lang/github-1.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/contact/contact.js">
+    <entry file="file://$PROJECT_DIR$/src/components/experience/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/experience/slider.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/contact/contact.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-778">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        <state relative-caret-position="365">
+          <caret line="49" column="81" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -700,151 +727,266 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/animate.css/animate.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.module.scss">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="139" selection-start-line="3" selection-start-column="139" selection-end-line="3" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/header/header.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="65" selection-start-line="65" selection-end-line="68" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/experience/cards/expCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="-69">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/experience/cards/expCard.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="621">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/experience/skills.js">
+    <entry file="file://$PROJECT_DIR$/src/components/experience/cards/projectCard.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="345">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contact/contact.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/portfolio/RepoItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/portfolio/RepoItem.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/images/splash_screen.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/lang/64787566_10156062629890614_6933942996782022656_n.png" />
+    <entry file="file://$PROJECT_DIR$/src/components/experience/experience.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/googleMap/mapActionTypes.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/googleMap/mapActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/text.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/language/languageActions.js" />
+    <entry file="file://$PROJECT_DIR$/src/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/language/languageActionTypes.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/language/languageReducer.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/searchMenu/searchActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="13" selection-start-line="13" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/searchMenu/searchActionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/language/languageReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/searchMenu/searchReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/googleMap/mapReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/text.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/portfolio/RepoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/experience/experience.module.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="529">
+          <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/experience/cards/projectCard.module.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/portfolio/portfolio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="276">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/experience/cards/projectCard.js">
+    <entry file="file://$PROJECT_DIR$/src/components/portfolio/searchMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/eiti.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/background.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/fb.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/hobbies.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/fb-logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/hol.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/ja.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/header2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/linkedin.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/linkedin-logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/logo.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/sellions.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/world.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/splash_screen.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/zdj.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
+    <entry file="file://$PROJECT_DIR$/src/components/contact/contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/experience/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/experience/experience.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="56" column="72" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="72" />
+        <state relative-caret-position="1403">
+          <caret line="61" column="51" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
+    <entry file="file://$PROJECT_DIR$/src/components/contact/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+        <state relative-caret-position="355">
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/experience/cards/expCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/experience/cards/projectCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/language/languageActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/header/header.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/language/languageActionTypes.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/experience/experience.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="152" column="80" selection-start-line="152" selection-start-column="80" selection-end-line="152" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/text.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="28" column="315" selection-start-line="28" selection-start-column="315" selection-end-line="28" selection-end-column="315" />
         </state>
       </provider>
     </entry>

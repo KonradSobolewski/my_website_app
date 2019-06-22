@@ -12,6 +12,7 @@ import Contact from "../contact/contact";
 import Portfolio from "../portfolio/portfolio";
 import Experience from "../experience/experience";
 import {withStyles} from "@material-ui/styles"
+import TextService from '../../config/text.service'
 
 const style = {
 
@@ -34,14 +35,14 @@ class NavbarView extends React.Component {
                         centered={true}
                         variant={"fullWidth"}
                     >
-                        <Tab label="Experience" icon={<Star/>}/>
-                        <Tab label="Portfolio" icon={<Folder/>}/>
-                        <Tab label="Contact" icon={<PhoneIcon/>}/>
+                        <Tab label={TextService.text.exp} icon={<Star/>}/>
+                        <Tab label={TextService.text.portfolio} icon={<Folder/>}/>
+                        <Tab label={TextService.text.contact} icon={<PhoneIcon/>}/>
                     </Tabs>
                 </AppBar>
-                {this.props.view === 0 && <Experience/>}
-                {this.props.view === 1 && <Portfolio/>}
-                {this.props.view === 2 && <Contact/>}
+                {this.props.view === 0 && <Experience {...this.props}/>}
+                {this.props.view === 1 && <Portfolio {...this.props}/>}
+                {this.props.view === 2 && <Contact {...this.props}/>}
             </div>
         );
     }

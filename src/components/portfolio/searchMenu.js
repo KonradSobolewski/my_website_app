@@ -5,9 +5,9 @@ import * as searchActions from '../../redux/actions/searchMenu/searchActions'
 import {connect} from 'react-redux';
 import classes from './searchMenu.module.scss';
 import Search from '@material-ui/icons/Search';
+import TextService from '../../config/text.service'
 
 class SearchMenu extends Component{
-
 
     componentDidMount() {
       this.searchForRepos();
@@ -26,11 +26,11 @@ class SearchMenu extends Component{
             <div className={classes.searchMenu}>
                 <FormControl>
                     <InputLabel htmlFor='search-input'>
-                        Repository search...
+                        {TextService.text.searchRepo}
                     </InputLabel>
                     <Input id='search-input'
                            defaultValue={"KonradSobolewski"}
-                           placeholder={"Give me github login"}
+                           placeholder={TextService.text.searchPlaceholder}
                            className={classes.input}
                            onChange={event => this.userInputHandler(event.target.value)}
                     />
@@ -43,7 +43,7 @@ class SearchMenu extends Component{
                         aria-label="add"
                         onClick={() => this.searchForRepos()}
                     >
-                        Search
+                        {TextService.text.search}
                         <Search className={classes.sendIcon} />
                     </Fab>
                 </div>

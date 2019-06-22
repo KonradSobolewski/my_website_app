@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import * as classes from './projectCard.module.scss'
+import TextService from "../../../config/text.service";
 
 const ProjectCard = props => (
     <Card className={classes.card} raised={true}>
@@ -32,7 +33,7 @@ const ProjectCard = props => (
         </CardActionArea>
         <CardActions className={classes.cardActions}>
             <Button size="small" color="primary" onClick={() => props.learnMoreAction(props.website)}>
-                Learn More
+                {TextService.text.learnMore}
             </Button>
         </CardActions>
     </Card>

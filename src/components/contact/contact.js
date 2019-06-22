@@ -8,12 +8,13 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import GoogleMapsContainer from "./map";
+import TextService from '../../config/text.service'
 
 export default class Contact extends React.Component {
     render() {
         return (
             <div>
-                <h3>Are you interested?<br/>Contact me by:</h3>
+                <h3>{TextService.text.interested}<br/>{TextService.text.contactMe}</h3>
                 <div className={classes.contact}>
                     <div className={classes.iconArea}>
                         <a href={"mailto:konradsob12@gmail.com"} className={classes.href}>
@@ -58,7 +59,7 @@ export default class Contact extends React.Component {
                         </a>
                     </div>
                 </div>
-                <GoogleMapsContainer />
+                <GoogleMapsContainer {...this.props}/>
             </div>
         )
     }

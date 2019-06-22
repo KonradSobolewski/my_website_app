@@ -15,7 +15,7 @@ class Portfolio extends React.Component {
         );
         return (
             <div>
-                <SearchMenu/>
+                <SearchMenu {...this.props}/>
                 {this.props.loading ?
                     (<div className={classes.progress}>
                         <CircularProgress size={100}/>

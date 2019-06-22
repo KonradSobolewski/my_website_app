@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  position: relative;
   align-items: center;
   background: url("../../assets/images/background.jpg") no-repeat right;
   background-size: cover;
@@ -25,24 +26,24 @@
 }
 
 .avatar {
-  margin: 2em 5em 2em 15em;
+  margin: 2em 5em 2em 23em;
   width: 230px;
   height: 230px;
   border-radius: 50%;
-  background: url("../../assets/images/zdj.png") no-repeat center;
+  background: url("../../assets/images/IMG_4837.JPG") no-repeat center;
   background-size: cover;
   @media only screen and (max-width: 1500px) {
-    margin: 2em 5em 2em 10em;
+    margin: 2em 5em 2em 15em;
     width: 180px;
     height: 180px;
   }
   @media only screen and (max-width: 1280px) {
-    margin: 2em 4em 2em 5em;
+    margin: 2em 4em 2em 9em;
     width: 150px;
     height: 150px;
   }
   @media only screen and (max-width: 800px) {
-    margin: 2em 2em 2em 3em;
+    margin: 2em 2em 2em 4em;
     width: 120px;
     height: 120px;
   }
@@ -72,8 +73,8 @@
   font-size: 3em;
   padding: 0.2em 0;
   white-space: nowrap;
-  color: 	#3d354b;
-  font-family: MuliRegular ;
+  color: #3d354b;
+  font-family: MuliRegular;
   @media only screen and (max-width: 1500px) {
     font-size: 2.5em;
   }
@@ -113,4 +114,55 @@
     font-size: 0.55em;
   }
 }
+
+.app {
+  position: relative;
+
+  > .switchContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    margin: 1em;
+    top: 0;
+    left: 0;
+    background: rgba(100,100,100,0.2);
+    border-radius: 1em;
+    @media only screen and (max-width: 1500px) {
+      left: auto;
+      right: 0;
+    }
+    @media only screen and (max-width: 1280px) {
+      padding: 0.5em;
+      margin: 0.7em;
+    }
+    @media only screen and (max-width: 600px) {
+      padding: 0.4em;
+      margin: 0.3em;
+    }
+    > .switch {
+      padding: 0 1em;
+      @media only screen and (max-width: 1280px) {
+        padding: 0 0.4em;
+        transform: scale(0.8);
+      }
+      @media only screen and (max-width: 600px) {
+        padding: 0;
+        transform: scale(0.6);
+      }
+    }
+    > .lang {
+      width: 2.5em;
+      height: auto;
+      @media only screen and (max-width: 1280px) {
+        width: 2em;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 1.5em;
+      }
+    }
+  }
+}
+
 

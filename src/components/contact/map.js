@@ -6,6 +6,7 @@ import * as mapActions from "../../redux/actions/googleMap/mapActions";
 import connect from "react-redux/es/connect/connect";
 import * as Config from "../../config/config"
 import * as classes from "./contact.module.scss";
+import TextService from '../../config/text.service'
 
 class GoogleMapsContainer extends React.Component {
     onMarkerClick = (props, marker, e) => {
@@ -37,15 +38,15 @@ class GoogleMapsContainer extends React.Component {
             >
                 <Marker
                     onClick={this.onMarkerClick}
-                    title={'My University'}
+                    title={TextService.text.myUniversity}
                     position={{lat: 52.218996, lng: 21.011797}}
-                    name={'Warsaw University of Technology'}
+                    name={TextService.text.university}
                 />
                 <Marker
                     onClick={this.onMarkerClick}
-                    title={'Actual work Place'}
+                    title={TextService.text.actualJob}
                     position={{lat: 52.232249, lng: 20.987971}}
-                    name={'Company: Sellions'}
+                    name={TextService.text.company}
                 />
                 <InfoWindow
                     marker={this.props.activeMarker}

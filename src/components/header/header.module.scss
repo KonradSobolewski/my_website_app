@@ -117,49 +117,54 @@
 
 .app {
   position: relative;
-
-  > .switchContainer {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.7em;
-    margin: 1em;
-    top: 0;
-    left: 0;
-    background: rgba(100,100,100,0.2);
-    border-radius: 1em;
-    @media only screen and (max-width: 1500px) {
-      left: auto;
-      right: 0;
-    }
-    @media only screen and (max-width: 1280px) {
-      padding: 0.5em;
-      margin: 0.7em;
-    }
-    @media only screen and (max-width: 600px) {
-      padding: 0.4em;
-      margin: 0.3em;
-    }
-    > .switch {
-      padding: 0 1em;
+  > .blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+  > .container {
+    > .switchContainer {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7em;
+      margin: 1em;
+      top: 0;
+      left: 0;
+      background: rgba(100, 100, 100, 0.2);
+      border-radius: 1em;
+      @media only screen and (max-width: 1500px) {
+        left: auto;
+        right: 0;
+      }
       @media only screen and (max-width: 1280px) {
-        padding: 0 0.4em;
-        transform: scale(0.8);
+        padding: 0.5em;
+        margin: 0.7em;
       }
       @media only screen and (max-width: 600px) {
-        padding: 0;
-        transform: scale(0.6);
+        padding: 0.4em;
+        margin: 0.3em;
       }
-    }
-    > .lang {
-      width: 2.5em;
-      height: auto;
-      @media only screen and (max-width: 1280px) {
-        width: 2em;
+      > .switch {
+        padding: 0 1em;
+        @media only screen and (max-width: 1280px) {
+          padding: 0 0.4em;
+          transform: scale(0.8);
+        }
+        @media only screen and (max-width: 600px) {
+          padding: 0;
+          transform: scale(0.6);
+        }
       }
-      @media only screen and (max-width: 600px) {
-        width: 1.5em;
+      > .lang {
+        width: 2.5em;
+        height: auto;
+        @media only screen and (max-width: 1280px) {
+          width: 2em;
+        }
+        @media only screen and (max-width: 600px) {
+          width: 1.5em;
+        }
       }
     }
   }

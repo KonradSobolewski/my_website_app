@@ -25,7 +25,7 @@ class SearchMenu extends Component{
         return (
             <div className={classes.searchMenu}>
                 <FormControl>
-                    <InputLabel htmlFor='search-input'>
+                    <InputLabel htmlFor='search-input' className={classes.inputLabel}>
                         {TextService.text.searchRepo}
                     </InputLabel>
                     <Input id='search-input'

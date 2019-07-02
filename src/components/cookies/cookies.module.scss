@@ -1,0 +1,64 @@
+.container {
+  position: fixed;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  > .content {
+    font-size: 0.85em;
+    padding: 1em;
+    border-radius: 1em;
+    display: block;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+    width: 40%;
+    height: auto;
+    @media only screen and (max-width: 1280px) {
+      width: 55%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
+    >.cancel {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 1em;
+      cursor: pointer;
+    }
+    > .title {
+      font-size: 1.5em;
+      padding: 2em;
+    }
+    > .body {
+
+    }
+    > .buttonContainer{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 2em 0;
+      >.button {
+        margin: 1em 2em;
+      }
+    }
+
+  }
+}
+.hide {
+  display: none;
+}
+.href{
+  text-decoration: none;
+  color: black;
+}
+
+.href:hover {
+  color: blue
+}

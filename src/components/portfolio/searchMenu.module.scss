@@ -36,3 +36,9 @@
 .sendIcon {
   margin: 0 0.5em;
 }
+.inputLabel {
+  transform: scale(0.7) !important;
+  @media only screen and (max-width: 600px) {
+    transform: scale(.5) !important;;
+  }
+}

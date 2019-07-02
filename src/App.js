@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import NavbarView from "./components/navbar/navbar";
 import Header from "./components/header/header";
 import TextService from "./config/text.service";
@@ -8,40 +8,69 @@ import POLAND from "./assets/images/poland.svg";
 import Switch from "react-switch";
 import ENG from "./assets/images/eng.svg";
 import * as headerActions from "./redux/actions/language/languageActions";
+import * as cookiesActions from "./redux/actions/cookies/cookiesActions";
 import connect from "react-redux/es/connect/connect";
+import Footer from './components/footer/footer'
+import Cookies from './components/cookies/cookies'
+import {withCookies} from 'react-cookie';
 
 class App extends Component {
 
-    handleChange = (checked) => {
-        if(checked) {
-            TextService.text = textConfig.eng;
-            this.props.setLang(true);
-        } else {
-            TextService.text = textConfig.pl;
-            this.props.setLang(false);
+    componentWillUpdate(nextProps, nextState) {
+        return nextProps.switch !== this.props.switch
+    }
+
+    componentWillMount() {
+        const {cookies} = this.props;
+        if (cookies.get('eng') === "true") {
+            this.closeCookies();
+            this.handleChange(true, cookies)
+        } else if (cookies.get('eng') === "false") {
+            this.closeCookies();
+            this.handleChange(false, cookies)
         }
+    }
+
+    handleChange = (checked, cookies) => {
+        TextService.text = checked ? textConfig.eng : textConfig.pl;
+        this.props.setLang(checked);
+        cookies.set('eng', checked, {path: '/'});
     };
-  render() {
-    return (
-      <div className={css.app}>
-          <Header {...this.props}/>
-          <div className={css.switchContainer}>
-              <img src={POLAND} alt={"pl"} className={css.lang}/>
-              <Switch onChange={this.handleChange} checked={this.props.switch} className={css.switch} uncheckedIcon={false} checkedIcon={false} offColor={'#CC0000'}/>
-              <img src={ENG} alt={"eng"} className={css.lang}/>
-          </div>
-          <NavbarView {...this.props}/>
-      </div>
-    );
-  }
+
+    closeCookies = () => {
+        this.props.showCookies(false)
+    };
+
+    render() {
+        const {cookies} = this.props;
+        return (
+            <div className={css.app}>
+                <Cookies {...this.props} closeCookies={() => this.closeCookies()}/>
+                <div className={[css.container, this.props.show && css.blur].join(' ')}>
+                    <Header {...this.props}/>
+                    <div className={css.switchContainer}>
+                        <img src={POLAND} alt={"pl"} className={css.lang}/>
+                        <Switch onChange={(value) => this.handleChange(value, cookies)} checked={this.props.switch}
+                                className={css.switch}
+                                uncheckedIcon={false} checkedIcon={false} offColor={'#CC0000'}/>
+                        <img src={ENG} alt={"eng"} className={css.lang}/>
+                    </div>
+                    <NavbarView {...this.props}/>
+                    <Footer/>
+                </div>
+            </div>
+        );
+    }
 }
 
-const mapStateToProps = state => ({
-    switch: state.header.switch
+const mapStateToProps = (state) => ({
+    switch: state.header.switch,
+    show: state.cookies.show,
 });
 
 const mapDispatchToProps = dispatch => ({
     setLang: value => dispatch(headerActions.setLang(value)),
+    showCookies: value => dispatch(cookiesActions.showCookies(value))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(withCookies(App));

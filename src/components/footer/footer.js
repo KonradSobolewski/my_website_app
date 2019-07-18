@@ -5,7 +5,7 @@ class footer extends PureComponent {
         return (
             <div className={css.container}>
                 <div className={css.footer}>
-                    Konrad Sobolewski &#x24D2; 2019
+                    Konrad Sobolewski 2019 &#x24D2; All rights reserved
                 </div>
             </div>
         )

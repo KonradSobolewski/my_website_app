@@ -15,7 +15,7 @@ const ExpCard = props => (
             <CardMedia
                 component="img"
                 alt="Company"
-                className={classes.media}
+                className={props.imageStyle ? classes.variant : classes.media}
                 image={props.image}
                 title={props.title}
             />

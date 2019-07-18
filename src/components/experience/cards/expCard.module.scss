@@ -20,6 +20,17 @@
     }
 }
 
+.variant {
+    font-family: MuliRegular ;
+    width: 50% !important;
+    height: 40px !important;
+    padding: 2em !important;
+    margin: 0 auto !important;
+    @media only screen and (max-width: 600px) {
+        height: 35px !important;
+    }
+}
+
 .cardActions {
     position: absolute;
     bottom: 0;

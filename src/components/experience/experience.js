@@ -26,6 +26,8 @@ import BITBUCKET from '../../assets/lang/bitbucket-icon.svg'
 import INTEL from '../../assets/lang/intellij-idea-1.svg'
 import FIREBASE from '../../assets/lang/firebase-1.svg'
 import JIRA from '../../assets/lang/jira-1.svg'
+import SASS from '../../assets/lang/sass.svg'
+import LOGO from '../../assets/images/logoColor.png'
 import ProjectCard from "./cards/projectCard";
 import Chip from "@material-ui/core/Chip/Chip";
 import {Done} from "@material-ui/icons";
@@ -51,7 +53,7 @@ class Experience extends React.Component {
     render() {
         const {classes} = this.props;
         const backend = [JAVA, SPRING, HIBERNATE, KOTLIN, PSQL, MYSQL, PHP];
-        const frontend = [REACT2, ANGULAR, JS, TS, CSS3, HTML];
+        const frontend = [REACT2, ANGULAR, JS, TS, SASS, CSS3, HTML];
         const mobile = [REACT2, ANDROID];
         const other = [GIT, GITHUB, BITBUCKET, JIRA, FIREBASE, INTEL, BOOTSTRAP];
 
@@ -117,6 +119,7 @@ class Experience extends React.Component {
                                      date={TextService.text.atineaDate}
                                      website={"https://atinea.pl/"}
                                      learnMoreAction={this.openWebsite}
+                                     imageStyle={true}
                             />
                         </div>
                     </Fade>
@@ -149,11 +152,12 @@ class Experience extends React.Component {
                                          learnMoreAction={this.openWebsite}
                             />
                             <ProjectCard title={TextService.text.myWeb}
-                                         image={REACT2}
+                                         image={LOGO}
                                          description={TextService.text.myWebDesc}
                                          technology={webSiteTech}
                                          website={"https://github.com/KonradSobolewski/my_website_app"}
                                          learnMoreAction={this.openWebsite}
+                                         imageStyle={true}
                             />
                         </div>
                     </Fade>

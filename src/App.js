@@ -49,11 +49,12 @@ class App extends Component {
                 <div className={[css.container, this.props.show && css.blur].join(' ')}>
                     <Header {...this.props}/>
                     <div className={css.switchContainer}>
-                        <img src={POLAND} alt={"pl"} className={css.lang}/>
                         <Switch onChange={(value) => this.handleChange(value, cookies)} checked={this.props.switch}
                                 className={css.switch}
-                                uncheckedIcon={false} checkedIcon={false} offColor={'#CC0000'}/>
-                        <img src={ENG} alt={"eng"} className={css.lang}/>
+                                width={100}
+                                onColor={'#888'}
+                                checkedIcon={<img src={ENG} alt={"pl"} className={css.checkedSwitch}/>}
+                                uncheckedIcon={<img src={POLAND} alt={"ENG"} className={css.uncheckedSwitch}/>}/>
                     </div>
                     <NavbarView {...this.props}/>
                     <Footer/>

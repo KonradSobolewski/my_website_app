@@ -33,9 +33,7 @@ export default class SwipeToSlide extends Component {
             infinite: true,
             centerPadding: "60px",
             slidesToShow: this.props.elements,
-            swipeToSlide: true,
-            nextArrow: <SampleNextArrow/>,
-            prevArrow: <SampleBeforeArrow/>,
+            swipeToSlide: true
         };
         return (
             <div className={this.props.leftSide ? css.slider : css.sliderRight} style={{background: this.props.color}}>

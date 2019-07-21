@@ -96,10 +96,10 @@ class Experience extends React.Component {
         });
         return (
             <div>
-                <Slider languages={backend} title={TextService.text.backend.toUpperCase()} leftSide={true} elements={5} color={'#90caf9'}/>
-                <Slider languages={frontend} title={TextService.text.frontend.toUpperCase()} leftSide={false} elements={5} color={'#ef5350'}/>
-                <Slider languages={mobile} title={TextService.text.mobile.toUpperCase()} leftSide={true} elements={2} color={'#ebe2b0'}/>
-                <Slider languages={other} title={TextService.text.other.toUpperCase()} leftSide={false} elements={5} color={'#8FFFBF'}/>
+                <Slider languages={backend} title={TextService.text.backend.toUpperCase()} leftSide={true} elements={5} color={'#B5B5EB'}/>
+                <Slider languages={frontend} title={TextService.text.frontend.toUpperCase()} leftSide={false} elements={5} color={'#CDCAFE'}/>
+                <Slider languages={mobile} title={TextService.text.mobile.toUpperCase()} leftSide={true} elements={2} color={'#B5B5EB'}/>
+                <Slider languages={other} title={TextService.text.other.toUpperCase()} leftSide={false} elements={5} color={'#CDCAFE'}/>
                 <div className={css.container}>
                     <Fade bottom>
                         <h3>{TextService.text.commercialExp}</h3>

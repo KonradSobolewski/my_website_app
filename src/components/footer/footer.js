@@ -1,12 +1,11 @@
-import React,{PureComponent} from 'react'
+import React, {PureComponent} from 'react'
 import * as css from './footer.module.scss'
+
 class footer extends PureComponent {
-    render () {
+    render() {
         return (
-            <div className={css.container}>
-                <div className={css.footer}>
-                    Konrad Sobolewski 2019 &copy; All rights reserved
-                </div>
+            <div className={css.footer}>
+                Konrad Sobolewski 2019 &copy; All rights reserved
             </div>
         )
     }

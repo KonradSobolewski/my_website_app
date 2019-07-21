@@ -15,7 +15,7 @@ function formatDate(date) {
 }
 
 const RepoItem = props => (
-    <ExpansionPanel className={classes.panel}>
+    <ExpansionPanel className={classes.panel} square={true}>
         <ExpansionPanelSummary classes={{content: classes.Summary}}>
 
             <div className={classes.textField}>

@@ -26,9 +26,9 @@ const ProjectCard = props => (
                 <Typography variant="h5" component="h3" gutterBottom align={"center"}>
                     {props.technology}
                 </Typography>
-                <Typography component="span" gutterBottom>
+                <div className={classes.description}>
                     {props.description}
-                </Typography>
+                </div>
             </CardContent>
         </CardActionArea>
         <CardActions className={classes.cardActions}>

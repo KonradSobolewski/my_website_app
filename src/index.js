@@ -11,6 +11,26 @@ import {languageReducer} from "./redux/reducers/language/languageReducer";
 import thunk from 'redux-thunk';
 import {cookiesReducer} from "./redux/reducers/cookies/cookiesReducer";
 import {CookiesProvider} from 'react-cookie';
+import {MuiThemeProvider, createMuiTheme} from '@material-ui/core'
+import {purple, grey} from '@material-ui/core/colors'
+
+const theme = createMuiTheme({
+    typography: {
+        fontSize: 12,
+        '@media (max-width:600px)': {
+            fontSize: 6,
+        }
+    },
+    palette: {
+        primary: {
+            main: purple["600"],
+        },
+        secondary: {
+            main: grey["700"]
+        },
+        type: "light"
+    }
+});
 
 const reducer = combineReducers({
     search: searchReducer,
@@ -26,9 +46,11 @@ const store = createStore(reducer, compose(
 
 ReactDOM.render(
     <CookiesProvider>
-        <Provider store={store}>
-            <App/>
-        </Provider>
+        <MuiThemeProvider theme={theme}>
+            <Provider store={store}>
+                <App/>
+            </Provider>
+        </MuiThemeProvider>
     </CookiesProvider>
     , document.getElementById('root')
 );

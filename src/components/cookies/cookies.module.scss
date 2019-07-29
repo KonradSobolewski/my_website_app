@@ -46,9 +46,29 @@
       padding: 2em 0;
       >.button {
         margin: 1em 2em;
+        border: 2px solid #8f0b98;
+        background: transparent;
+        color:  #8f0b98;
+        width: 8em;
+        height: 4em;
+        cursor: pointer;
+        transition: all 0.5s;
+        text-decoration: none;
+        &:hover {
+          color:  white;
+          background: #8f0b98;
+        }
+      }
+      > .buttonCancel {
+        @extend .button;
+        background: #8f0b98;
+        color: white;
+        &:hover {
+          background: transparent;
+          color:  #8f0b98;
+        }
       }
     }
-
   }
 }
 .hide {

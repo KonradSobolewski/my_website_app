@@ -32,7 +32,7 @@ const ExpCard = props => (
             </CardContent>
         </CardActionArea>
         <CardActions  className={classes.cardActions}>
-            <div>
+            <div className={classes.date}>
                 {props.date}
             </div>
             <div>

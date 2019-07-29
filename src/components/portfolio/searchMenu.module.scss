@@ -1,14 +1,15 @@
 .searchMenu {
+  position: sticky;
+  z-index: 500;
+  top: 90px;
   display: flex;
   align-items: center;
   padding: 1em;
   justify-content: center;
-  -webkit-box-shadow: 0 10px 40px -10px rgba(0,0,0,0.60);
-  -moz-box-shadow: 0 10px 40px -10px rgba(0,0,0,0.60);
-  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.60);
-  border-radius: 4px;
+  filter: drop-shadow(0px 5px 7px rgba(0,0,0,0.3));
+  border-radius: 10px;
   margin: 2em auto;
-  background: white;
+  background: radial-gradient(circle at 0% 0%, white 0%, #e3dcee 100%) ;
   max-width: 50%;
   min-width: 350px;
   box-sizing: border-box;

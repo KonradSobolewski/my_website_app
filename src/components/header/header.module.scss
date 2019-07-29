@@ -1,5 +1,28 @@
+@-webkit-keyframes rollIn {
+  0% {
+    transform: translateX(-100%) rotate(-250deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .header {
   display: flex;
+  z-index: 2;
   position: relative;
   align-items: center;
   background: url("../../assets/images/background.jpg") no-repeat right;
@@ -29,6 +52,7 @@
   margin: 2em 5em 2em 23em;
   width: 230px;
   height: 230px;
+  z-index: 5;
   border-radius: 50%;
   background: url("../../assets/images/IMG_4837.JPG") no-repeat center;
   background-size: cover;
@@ -57,6 +81,21 @@
     width: 60px;
     height: 60px;
   }
+  animation-duration: 1s; /* the duration of the animation */
+  animation-timing-function: ease; /* how the animation will behave */
+  animation-delay: 0s; /* how long to delay the animation from starting */
+  animation-iteration-count: 1; /* how many times the animation will play */
+  animation-name: rollIn; /* the name of the animation we defined above */
+  -webkit-animation-duration: 1s; /* the duration of the animation */
+  -webkit-animation-timing-function: ease; /* how the animation will behave */
+  -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
+  -webkit-animation-iteration-count: 1; /* how many times the animation will play */
+  -webkit-animation-name: rollIn; /* the name of the animation we defined above */
+  transition: all .5s;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
 }
 
 @font-face {
@@ -69,9 +108,34 @@
   src: url(../../assets/fonts/Muli-Regular.ttf);
 }
 
+.animation {
+  animation-duration: 1s; /* the duration of the animation */
+  animation-timing-function: ease; /* how the animation will behave */
+  animation-delay: 0s; /* how long to delay the animation from starting */
+  animation-iteration-count: 1; /* how many times the animation will play */
+  animation-name: fadeIn; /* the name of the animation we defined above */
+  -webkit-animation-duration: 1s; /* the duration of the animation */
+  -webkit-animation-timing-function: ease; /* how the animation will behave */
+  -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
+  -webkit-animation-iteration-count: 1; /* how many times the animation will play */
+  -webkit-animation-name: fadeIn; /* the name of the animation we defined above */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
 .name {
+  z-index: 5;
   font-size: 3em;
-  padding: 0.2em 0;
+  padding: 0.2em 0.1em 0.2em 0;
   white-space: nowrap;
   color: #3d354b;
   font-family: MuliRegular;
@@ -82,22 +146,32 @@
     font-size: 2em;
   }
   @media only screen and (max-width: 800px) {
-    font-size: 1.5em;
-    padding: 0.1em 0;
+    font-size: 1.8em;
+    padding: 0.1em 0.1em 0.1em 0;
   }
   @media only screen and (max-width: 600px) {
-    font-size: 1em;
-    padding: 0.05em 0;
+    font-size: 1.5em;
+    padding: 0.05em 0.05em 0.05em 0;
   }
   @media only screen and (max-width: 450px) {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .07em solid black; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+          typing 2s steps(25, end),
+          blink-caret .75s step-end infinite;
 }
 
 .underName {
-  @extend .name;
-  font-size: 1.5em;
+  z-index: 5;
+  @extend .animation;
+  padding: 0.2em 0;
   white-space: nowrap;
+  color: #3d354b;
+  font-family: MuliRegular;;
+  font-size: 1.5em;
   @media only screen and (max-width: 1500px) {
     font-size: 1.2em;
   }
@@ -113,6 +187,7 @@
   @media only screen and (max-width: 450px) {
     font-size: 0.55em;
   }
+  @extend .animation;
 }
 
 .app {
@@ -123,6 +198,7 @@
   }
   > .container {
     > .switchContainer {
+      z-index: 100;
       position: absolute;
       display: flex;
       justify-content: center;
@@ -173,6 +249,33 @@
 .checkedSwitch {
   @extend .uncheckedSwitch;
   margin-left: 0.8em;
+}
+
+.particles {
+  background: transparent;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  height: 24em;
+  @media only screen and (max-width: 1500px) {
+    height: 20em;
+  }
+  @media only screen and (max-width: 1280px) {
+    height: 17em;
+  }
+  @media only screen and (max-width: 950px) {
+    height: 14em;
+  }
+  @media only screen and (max-width: 800px) {
+    height: 13em;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 10em;
+  }
+  @media only screen and (max-width: 450px) {
+    height: 7em;
+  }
 }
 
 

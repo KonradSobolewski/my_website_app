@@ -1,6 +1,5 @@
 import React from 'react'
 import * as css from './cookies.module.scss'
-import Fab from '@material-ui/core/Fab';
 import Cancel from '@material-ui/icons/Cancel';
 import {useCookies} from "react-cookie";
 
@@ -27,17 +26,17 @@ const Cookies = props => {
                     cookie policy.
                 </div>
                 <div className={css.buttonContainer}>
-                    <Fab variant="extended" color="primary" className={css.button}
+                    <button className={css.button}
                          onClick={() => {
                              setCookie('eng', true, {path: '/'} );
                              props.closeCookies();
                          }}>
                         ACCEPT
-                    </Fab>
-                    <Fab variant="extended" color="primary" className={css.button}
+                    </button>
+                    <button className={css.buttonCancel}
                          onClick={() => props.closeCookies()}>
                         CANCEL
-                    </Fab>
+                    </button>
                 </div>
             </div>
         </div>

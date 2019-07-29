@@ -3,25 +3,6 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import * as css from './slider.module.scss'
-import {NavigateBefore, NavigateNext} from '@material-ui/icons'
-
-function SampleNextArrow(props) {
-    const {className, style, onClick} = props;
-    return (
-        <div className={className} style={{...style}} onClick={onClick}>
-            <NavigateNext color={"primary"} className={css.arrow}/>
-        </div>
-    );
-}
-
-function SampleBeforeArrow(props) {
-    const {className, style, onClick} = props;
-    return (
-        <div className={className} style={{...style, display: "block"}} onClick={onClick}>
-            <NavigateBefore color={"primary"} className={css.arrow}/>
-        </div>
-    );
-}
 
 export default class SwipeToSlide extends Component {
     render() {
@@ -35,8 +16,16 @@ export default class SwipeToSlide extends Component {
             slidesToShow: this.props.elements,
             swipeToSlide: true
         };
+        let color = css.slider1;
+        if(this.props.color === 2)
+            color = css.slider2;
+        else if (this.props.color === 3)
+            color = css.slider3;
+        else if (this.props.color === 4)
+            color = css.slider4;
+
         return (
-            <div className={this.props.leftSide ? css.slider : css.sliderRight} style={{background: this.props.color}}>
+            <div className={[(this.props.leftSide ? css.slider : css.sliderRight) , color].join(' ')}>
                 <div className={this.props.leftSide ? css.typoLeft: css.typoRight} >
                     <h2>
                         {this.props.title}

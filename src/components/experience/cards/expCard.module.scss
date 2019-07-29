@@ -1,5 +1,5 @@
 .card {
-    font-family: MuliRegular ;
+    //font-family: MuliRegular ;
     width: 450px;
     margin: 1em;
     position: relative;
@@ -10,7 +10,7 @@
 }
 
 .media {
-    font-family: MuliRegular ;
+    //font-family: MuliRegular ;
     width: 65% !important;
     height: 40px !important;
     padding: 2em !important;
@@ -21,7 +21,7 @@
 }
 
 .variant {
-    font-family: MuliRegular ;
+    //font-family: MuliRegular ;
     width: 50% !important;
     height: 40px !important;
     padding: 2em !important;
@@ -40,4 +40,10 @@
 
 .stack{
     padding: 2em 0;
+}
+
+.date {
+    font-family: "Noto Sans";
+    padding-left: 0.5em;
+    font-size: 0.8em;
 }

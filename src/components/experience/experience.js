@@ -99,14 +99,10 @@ class Experience extends React.Component {
         return (
             <div>
                 <Particles params={backgroundConfig} className={css.particles}/>
-                <Slider languages={backend} title={TextService.text.backend.toUpperCase()} leftSide={true} elements={5}
-                        color={1}/>
-                <Slider languages={frontend} title={TextService.text.frontend.toUpperCase()} leftSide={false}
-                        elements={5} color={2}/>
-                <Slider languages={mobile} title={TextService.text.mobile.toUpperCase()} leftSide={true} elements={2}
-                        color={3}/>
-                <Slider languages={other} title={TextService.text.other.toUpperCase()} leftSide={false} elements={5}
-                        color={4}/>
+                <Slider languages={backend} title={TextService.text.backend.toUpperCase()} elements={5}/>
+                <Slider languages={frontend} title={TextService.text.frontend.toUpperCase()} elements={5}/>
+                <Slider languages={mobile} title={TextService.text.mobile.toUpperCase()} elements={2}/>
+                <Slider languages={other} title={TextService.text.other.toUpperCase()}  elements={5}/>
                 <div className={css.container}>
                     <Fade bottom>
                         <h3>{TextService.text.commercialExp}</h3>

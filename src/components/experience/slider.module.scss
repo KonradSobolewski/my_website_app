@@ -39,50 +39,49 @@
   animation-timing-function: ease; /* how the animation will behave */
   animation-delay: 0s; /* how long to delay the animation from starting */
   animation-iteration-count: 1; /* how many times the animation will play */
-  animation-name: slideInFromLeft; /* the name of the animation we defined above */
   -webkit-animation-duration: 1s; /* the duration of the animation */
   -webkit-animation-timing-function: ease; /* how the animation will behave */
   -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
   -webkit-animation-iteration-count: 1; /* how many times the animation will play */
-  -webkit-animation-name: slideInFromLeft; /* the name of the animation we defined above */
-  transition: all 0.2s ease-in-out ;
-}
-
-.sliderRight {
-  @extend .slider;
-  margin: 0 15em 0 auto;
-  @media only screen and (max-width: 800px) {
-    margin: 2em auto;
-    width: 90%;
+  &:nth-of-type(even) {
+    background: radial-gradient(circle at 0% 0%, rgb(212, 211, 255) 0%, #9f9fd2 100%) ;
+    margin: 2em 15em;
+    animation-name: slideInFromLeft; /* the name of the animation we defined above */
+    -webkit-animation-name: slideInFromLeft; /* the name of the animation we defined above */
+    transition: all 0.2s ease ;
+    @media only screen and (max-width: 800px) {
+      margin: 2em auto;
+      width: 90%;
+    }
   }
-  animation-duration: 1s; /* the duration of the animation */
-  animation-timing-function: ease-in-out; /* how the animation will behave */
-  animation-delay: 0s; /* how long to delay the animation from starting */
-  animation-iteration-count: 1; /* how many times the animation will play */
-  animation-name: slideInFromRight; /* the name of the animation we defined above */
-  -webkit-animation-duration: 1s; /* the duration of the animation */
-  -webkit-animation-timing-function: ease-in-out; /* how the animation will behave */
-  -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
-  -webkit-animation-iteration-count: 1; /* how many times the animation will play */
-  -webkit-animation-name: slideInFromRight; /* the name of the animation we defined above */
+  &:nth-of-type(odd) {
+    background: radial-gradient(circle at 100% 0%, rgb(212, 211, 255) 0%, #9f9fd2 100%) ;
+    margin: 0 15em 0 auto;
+    animation-name: slideInFromRight; /* the name of the animation we defined above */
+    -webkit-animation-name: slideInFromRight;
+    transition: all 0.2s ease;
+    @media only screen and (max-width: 800px) {
+      margin: 2em auto;
+      width: 90%;
+    }
+    > div:nth-child(1) {
+      margin: 0 0 0 auto;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  > .typo {
+    width: 50%;
+    padding: 1em;
+    background: #917e9a;
+    @media only screen and (max-width: 800px) {
+      padding: 0.5em;
+    }
+  }
 }
 
-.slider:hover {
-  transform: scale(1.05);
-}
-
-.slider1 {
-  background: radial-gradient(circle at 0% 0%, rgb(212, 211, 255) 0%, #9f9fd2 100%) ;
-}
-.slider2 {
-  background: radial-gradient(circle at 100% 0%, rgb(212, 211, 255) 0%, #9f9fd2 100%) ;
-}
-.slider3 {
-  background: radial-gradient(circle at 0% 0%, rgb(212, 211, 255) 0%, #9f9fd2 100%) ;
-}
-.slider4 {
-  background: radial-gradient(circle at 100% 0%, rgb(212, 211, 255) 0%, #9f9fd2 100%) ;
-}
 .logo {
   width: 5em;
   height: 5em;
@@ -105,22 +104,6 @@
     padding: 1em 2em 2em 2em;
     width: 80%;
   }
-}
-.arrow {
-  margin-top: -1em;
-}
-.typoLeft {
-  width: 50%;
-  padding: 1em;
-  background: #917e9a;
-  @media only screen and (max-width: 800px) {
-    padding: 0.5em;
-  }
-}
-
-.typoRight {
- @extend .typoLeft;
-  margin: 0 0 0 auto;
 }
 
 h2 {

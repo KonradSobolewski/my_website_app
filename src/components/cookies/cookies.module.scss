@@ -36,9 +36,6 @@
       font-size: 1.5em;
       padding: 2em;
     }
-    > .body {
-
-    }
     > .buttonContainer{
       display: flex;
       justify-content: center;
@@ -77,8 +74,7 @@
 .href{
   text-decoration: none;
   color: black;
-}
-
-.href:hover {
-  color: blue
+  &:hover {
+    color: blue
+  }
 }

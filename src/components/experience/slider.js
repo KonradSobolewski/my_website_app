@@ -16,17 +16,10 @@ export default class SwipeToSlide extends Component {
             slidesToShow: this.props.elements,
             swipeToSlide: true
         };
-        let color = css.slider1;
-        if(this.props.color === 2)
-            color = css.slider2;
-        else if (this.props.color === 3)
-            color = css.slider3;
-        else if (this.props.color === 4)
-            color = css.slider4;
 
         return (
-            <div className={[(this.props.leftSide ? css.slider : css.sliderRight) , color].join(' ')}>
-                <div className={this.props.leftSide ? css.typoLeft: css.typoRight} >
+            <div className={css.slider}>
+                <div className={css.typo} >
                     <h2>
                         {this.props.title}
                     </h2>

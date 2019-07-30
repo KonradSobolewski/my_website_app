@@ -29,7 +29,7 @@ class SearchMenu extends Component{
                         {TextService.text.searchRepo}
                     </InputLabel>
                     <Input id='search-input'
-                           defaultValue={"KonradSobolewski"}
+                           defaultValue={this.props.userInput}
                            placeholder={TextService.text.searchPlaceholder}
                            className={classes.input}
                            onChange={event => this.userInputHandler(event.target.value)}

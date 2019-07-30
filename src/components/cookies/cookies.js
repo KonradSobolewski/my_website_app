@@ -17,7 +17,7 @@ const Cookies = props => {
                 <div className={css.title}>
                     Cookies Policy
                 </div>
-                <div className={css.body}>
+                <div>
                     This website or its third-party tools use cookies, which are necessary to its functioning and
                     required to achieve the purposes illustrated in the
                     <a href="https://www.cookiepolicygenerator.com/live.php?token=9XxYDPkHFC4uH6Xu85e4AKhX8MPoZt42}"

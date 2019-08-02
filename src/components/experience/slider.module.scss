@@ -1,9 +1,9 @@
 @-webkit-keyframes slideInFromLeft {
-  0% {
+  0%, 40%{
     transform: translateX(-100%);
     opacity: 0;
   }
-  30% {
+  60% {
     opacity: 0;
   }
   100% {
@@ -13,11 +13,11 @@
 }
 
 @-webkit-keyframes slideInFromRight {
-  0% {
+  0%, 40% {
     transform: translateX(100%);
     opacity: 0;
   }
-  30% {
+  60% {
     opacity: 0;
   }
   100% {
@@ -35,11 +35,11 @@
     margin: 2em auto;
     width: 90%;
   }
-  animation-duration: 1s; /* the duration of the animation */
+  animation-duration: 2s; /* the duration of the animation */
   animation-timing-function: ease; /* how the animation will behave */
   animation-delay: 0s; /* how long to delay the animation from starting */
   animation-iteration-count: 1; /* how many times the animation will play */
-  -webkit-animation-duration: 1s; /* the duration of the animation */
+  -webkit-animation-duration: 2s; /* the duration of the animation */
   -webkit-animation-timing-function: ease; /* how the animation will behave */
   -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
   -webkit-animation-iteration-count: 1; /* how many times the animation will play */
@@ -64,20 +64,32 @@
       margin: 2em auto;
       width: 90%;
     }
-    > div:nth-child(1) {
-      margin: 0 0 0 auto;
-    }
   }
 
   &:hover {
     transform: scale(1.05);
   }
-  > .typo {
-    width: 50%;
-    padding: 1em;
-    background: #917e9a;
-    @media only screen and (max-width: 800px) {
-      padding: 0.5em;
+  > .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    > .typo {
+      width: 50%;
+      padding: 1em;
+      background: #917e9a;
+      @media only screen and (max-width: 800px) {
+        padding: 0.5em;
+      }
+    }
+    > .icon {
+      padding: 0.2em 0.5em;
+      cursor: pointer;
+      color: white;
+      transition: all 0.5s;
+      &:hover {
+        color: red;
+        transform: scale(1.1);
+      }
     }
   }
 }

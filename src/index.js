@@ -13,6 +13,8 @@ import {cookiesReducer} from "./redux/reducers/cookies/cookiesReducer";
 import {CookiesProvider} from 'react-cookie';
 import {MuiThemeProvider, createMuiTheme} from '@material-ui/core'
 import {purple, grey} from '@material-ui/core/colors'
+import * as serviceWorker from './serviceWorker';
+import {expModalReducer} from "./redux/reducers/expModal/expModalReducer";
 
 const theme = createMuiTheme({
     typography: {
@@ -37,7 +39,8 @@ const reducer = combineReducers({
     navbar: navbarReducer,
     map: mapReducer,
     header: languageReducer,
-    cookies: cookiesReducer
+    cookies: cookiesReducer,
+    modal: expModalReducer
 });
 
 const store = createStore(reducer, compose(
@@ -54,3 +57,5 @@ ReactDOM.render(
     </CookiesProvider>
     , document.getElementById('root')
 );
+
+serviceWorker.register();

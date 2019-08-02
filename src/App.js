@@ -9,10 +9,12 @@ import Switch from "react-switch";
 import ENG from "./assets/images/eng.svg";
 import * as headerActions from "./redux/actions/language/languageActions";
 import * as cookiesActions from "./redux/actions/cookies/cookiesActions";
+import * as expModalActions from "./redux/actions/expModal/expModalActions";
 import connect from "react-redux/es/connect/connect";
 import Footer from './components/footer/footer'
 import Cookies from './components/cookies/cookies'
 import {withCookies} from 'react-cookie';
+import ExpModal from "./components/experience/expModal";
 
 class App extends Component {
 
@@ -46,6 +48,7 @@ class App extends Component {
         return (
             <div className={css.app}>
                 <Cookies {...this.props} closeCookies={() => this.closeCookies()}/>
+                <ExpModal/>
                 <div className={[css.container, this.props.show && css.blur].join(' ')}>
                     <Header {...this.props}/>
                     <div className={css.switchContainer}>
@@ -67,11 +70,15 @@ class App extends Component {
 const mapStateToProps = (state) => ({
     switch: state.header.switch,
     show: state.cookies.show,
+    modal: state.modal.show,
+    items: state.modal.items
 });
 
 const mapDispatchToProps = dispatch => ({
     setLang: value => dispatch(headerActions.setLang(value)),
-    showCookies: value => dispatch(cookiesActions.showCookies(value))
+    showCookies: value => dispatch(cookiesActions.showCookies(value)),
+    setModal: value => dispatch(expModalActions.setShow(value)),
+    setItems: value => dispatch(expModalActions.setItems(value))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withCookies(App));

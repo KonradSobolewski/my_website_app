@@ -1,5 +1,5 @@
 @-webkit-keyframes rollIn {
-  0% {
+  0% , 50%{
     transform: translateX(-100%) rotate(-250deg);
     opacity: 0;
   }
@@ -81,12 +81,12 @@
     width: 60px;
     height: 60px;
   }
-  animation-duration: 1s; /* the duration of the animation */
+  animation-duration: 2s; /* the duration of the animation */
   animation-timing-function: ease; /* how the animation will behave */
   animation-delay: 0s; /* how long to delay the animation from starting */
   animation-iteration-count: 1; /* how many times the animation will play */
   animation-name: rollIn; /* the name of the animation we defined above */
-  -webkit-animation-duration: 1s; /* the duration of the animation */
+  -webkit-animation-duration: 2s; /* the duration of the animation */
   -webkit-animation-timing-function: ease; /* how the animation will behave */
   -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
   -webkit-animation-iteration-count: 1; /* how many times the animation will play */

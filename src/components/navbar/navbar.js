@@ -17,7 +17,7 @@ import TextService from '../../config/text.service'
 const style = {
 
 };
-class NavbarView extends React.Component {
+class NavBarView extends React.Component {
 
     handleChangeView = (event, value) => {
         this.props.onViewChange(value);
@@ -56,4 +56,4 @@ const mapDispatchToProps = dispatch => ({
     onViewChange: value => dispatch(navbarActions.setView(value)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(withStyles(style)(NavbarView));
+export default connect(mapStateToProps, mapDispatchToProps)(withStyles(style)(NavBarView));

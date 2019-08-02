@@ -1,0 +1,114 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  position: fixed;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  animation-duration: 0.5s; /* the duration of the animation */
+  animation-timing-function: ease; /* how the animation will behave */
+  animation-delay: 0s; /* how long to delay the animation from starting */
+  animation-iteration-count: 1; /* how many times the animation will play */
+  -webkit-animation-duration: 0.5s; /* the duration of the animation */
+  -webkit-animation-timing-function: ease; /* how the animation will behave */
+  -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
+  -webkit-animation-iteration-count: 1; /* how many times the animation will play */
+  animation-name: fade; /* the name of the animation we defined above */
+  -webkit-animation-name: fade; /* the name of the animation we defined above */
+  >.modal {
+    font-size: 0.85em;
+    padding: 1em;
+    border-radius: 1em;
+    display: block;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(0px 5px 10px black);
+    animation-duration: 0.5s; /* the duration of the animation */
+    animation-timing-function: ease; /* how the animation will behave */
+    animation-delay: 0s; /* how long to delay the animation from starting */
+    animation-iteration-count: 1; /* how many times the animation will play */
+    -webkit-animation-duration: 0.5s; /* the duration of the animation */
+    -webkit-animation-timing-function: ease; /* how the animation will behave */
+    -webkit-animation-delay: 0s; /* how long to delay the animation from starting */
+    -webkit-animation-iteration-count: 1; /* how many times the animation will play */
+    animation-name: fadeIn; /* the name of the animation we defined above */
+    -webkit-animation-name: fadeIn; /* the name of the animation we defined above */
+    @media only screen and (max-width: 1280px) {
+      width: 65%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
+  }
+}
+.logo {
+  width: 5em;
+  height: 5em;
+  @media only screen and (max-width: 1300px) {
+    width: 3em;
+    height: 3em;
+  }
+  @media only screen and (max-width: 800px) {
+    width: 2em;
+    height: 2em;
+  }
+}
+.hide {
+  display: none;
+}
+.button {
+  margin: 1em 2em;
+  border: 2px solid #8f0b98;
+  background: transparent;
+  color:  #8f0b98;
+  width: 8em;
+  height: 4em;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-decoration: none;
+  &:hover {
+    color:  white;
+    background: #8f0b98;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  align-items: center;
+  >.level {
+    padding: 0 1em;
+    flex-grow: 1;
+    > div {
+      padding: 1em;
+    }
+  }
+}

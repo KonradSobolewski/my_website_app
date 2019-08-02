@@ -31,7 +31,7 @@ import LOGO from '../../assets/images/logoColor.png'
 import ProjectCard from "./cards/projectCard";
 import Chip from "@material-ui/core/Chip/Chip";
 import {Done} from "@material-ui/icons";
-import Slider from "./slider";
+import SwipeToSlide from "./slider";
 import {withStyles} from "@material-ui/core";
 import "animate.css/animate.min.css";
 import Fade from 'react-reveal/Fade'
@@ -46,128 +46,243 @@ const styles = {
     }
 };
 
-class Experience extends React.Component {
-    openWebsite = (url) => {
+const Experience = (props) => {
+    const openWebsite = (url) => {
         const win = window.open(url, '_blank');
         win.focus();
     };
 
-    render() {
-        const {classes} = this.props;
-        const backend = [JAVA, SPRING, HIBERNATE, KOTLIN, PSQL, MYSQL, PHP];
-        const frontend = [REACT2, ANGULAR, JS, TS, SASS, CSS3, HTML];
-        const mobile = [REACT2, ANDROID];
-        const other = [GIT, GITHUB, BITBUCKET, JIRA, FIREBASE, INTEL, BOOTSTRAP];
+    const {classes} = props;
+    const backend = [
+        {
+            "icon": JAVA,
+            "name": "Java",
+            "level": 60
+        },
+        {
+            "icon": SPRING,
+            "name": "Spring",
+            "level": 50
+        },
+        {
+            "icon":  HIBERNATE,
+            "name": "Hibernate",
+            "level": 40
+        },
+        {
+            "icon":  KOTLIN,
+            "name": "Kotlin",
+            "level": 30
+        },
+        {
+            "icon":  PSQL,
+            "name": "PostgreSql",
+            "level": 50
+        },
+        {
+            "icon":  MYSQL,
+            "name": "MySql",
+            "level": 30
+        },
+        {
+            "icon":  PHP,
+            "name": "PHP",
+            "level": 20
+        }];
+    const frontend = [
+        {
+            "icon": REACT2,
+            "name": "React",
+            "level": 60
+        },
+        {
+            "icon": ANGULAR,
+            "name": "Angular.js",
+            "level": 40
+        },
+        {
+            "icon":  JS,
+            "name": "JavaScript",
+            "level": 60
+        },
+        {
+            "icon":  TS,
+            "name": "TypeScript",
+            "level": 20
+        },
+        {
+            "icon":  SASS,
+            "name": "Sass",
+            "level": 40
+        },
+        {
+            "icon":  CSS3,
+            "name": "Css3",
+            "level": 60
+        },
+        {
+            "icon":  HTML,
+            "name": "HTML5",
+            "level": 60
+        }];
+    const mobile = [
+        {
+            "icon":  REACT2,
+            "name": "React Native",
+            "level": 50
+        },
+        {
+            "icon":  ANDROID,
+            "name": "Android",
+            "level": 30
+        }];
+    const other = [
+        {
+            "icon":  GIT,
+            "name": "GIT",
+            "level": 50
+        },
+        {
+            "icon":  GITHUB,
+            "name": "Github",
+            "level": 50
+        },
+        {
+            "icon":  BITBUCKET,
+            "name": "Bitbucket",
+            "level": 60
+        },
+        {
+            "icon":  JIRA,
+            "name": "Jira",
+            "level": 60
+        },
+        {
+            "icon":  FIREBASE,
+            "name": "Firebase",
+            "level": 30
+        },
+        {
+            "icon":  INTEL,
+            "name": "InteliiJ",
+            "level": 50
+        },
+        {
+            "icon":  BOOTSTRAP,
+            "name": "Bootstrap",
+            "level": 30
+        }
+    ];
 
-        const youMeetBack = ["Java 8", "Spring Boot", "Spring Data", "Spring MVC", "Spring Security", "Hibernate", "PostgreSQL"].map(item => {
-            return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
-                          label={item}
-                          variant={"outlined"}
-                          className={css.chip}/>)
-        });
-        const youMeetFront = ["React-Native"].map(item => {
-            return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
-                          label={item}
-                          variant={"outlined"}
-                          className={css.chip}/>)
-        });
+    const youMeetBack = ["Java 8", "Spring Boot", "Spring Data", "Spring MVC", "Spring Security", "Hibernate", "PostgreSQL"].map(item => {
+        return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
+                      label={item}
+                      variant={"outlined"}
+                      className={css.chip}/>)
+    });
+    const youMeetFront = ["React-Native"].map(item => {
+        return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
+                      label={item}
+                      variant={"outlined"}
+                      className={css.chip}/>)
+    });
 
-        const sellionsTech = ["Java 8", "Spring Boot", "Angular.js", "PostgreSQL", "SASS", "JIRA", "BitBucket"].map(item => {
-            return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
-                          label={item}
-                          variant={"outlined"}
-                          className={css.chip}/>)
-        });
-        const atineaTech = ["PHP", "JQuery", "MySQL"].map(item => {
-            return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
-                          label={item}
-                          variant={"outlined"}
-                          className={css.chip}/>)
-        });
-        const rocketFuelTech = ["Kotlin", "Android SDK", "Firebase"].map(item => {
-            return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
-                          label={item}
-                          variant={"outlined"}
-                          className={css.chip}/>)
-        });
-        const webSiteTech = ["React.js", "Redux", "SASS"].map(item => {
-            return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
-                          label={item}
-                          variant={"outlined"}
-                          className={css.chip}/>)
-        });
-        return (
-            <div>
-                <Particles params={backgroundConfig} className={css.particles}/>
-                <Slider languages={backend} title={TextService.text.backend.toUpperCase()} elements={5}/>
-                <Slider languages={frontend} title={TextService.text.frontend.toUpperCase()} elements={5}/>
-                <Slider languages={mobile} title={TextService.text.mobile.toUpperCase()} elements={2}/>
-                <Slider languages={other} title={TextService.text.other.toUpperCase()}  elements={5}/>
-                <div className={css.container}>
-                    <Fade bottom>
-                        <h3>{TextService.text.commercialExp}</h3>
-                        <div className={css.subContainer2}>
-                            <ExpCard title={"Sellions"}
-                                     image={SellionsLogo}
-                                     description={"Junior Full Stack Developer"}
-                                     stack={sellionsTech}
-                                     date={TextService.text.sellionsDate}
-                                     website={"https://www.sellions.com/"}
-                                     learnMoreAction={this.openWebsite}
-                            />
-                            <ExpCard title={"Atinea"}
-                                     image={AtineaLogo}
-                                     description={"Junior Software Developer"}
-                                     stack={atineaTech}
-                                     date={TextService.text.atineaDate}
-                                     website={"https://atinea.pl/"}
-                                     learnMoreAction={this.openWebsite}
+    const sellionsTech = ["Java 8", "Spring Boot", "Angular.js", "PostgreSQL", "SASS", "JIRA", "BitBucket"].map(item => {
+        return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
+                      label={item}
+                      variant={"outlined"}
+                      className={css.chip}/>)
+    });
+    const atineaTech = ["PHP", "JQuery", "MySQL"].map(item => {
+        return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
+                      label={item}
+                      variant={"outlined"}
+                      className={css.chip}/>)
+    });
+    const rocketFuelTech = ["Kotlin", "Android SDK", "Firebase"].map(item => {
+        return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
+                      label={item}
+                      variant={"outlined"}
+                      className={css.chip}/>)
+    });
+    const webSiteTech = ["React.js", "Redux", "SASS"].map(item => {
+        return (<Chip key={item.toString()} icon={<Done classes={{root: classes.root}}/>}
+                      label={item}
+                      variant={"outlined"}
+                      className={css.chip}/>)
+    });
+    return (
+        <div>
+            <Particles params={backgroundConfig} className={css.particles}/>
+            <SwipeToSlide languages={backend} title={TextService.text.backend.toUpperCase()} elements={5} right={true}/>
+            <SwipeToSlide languages={frontend} title={TextService.text.frontend.toUpperCase()} elements={5}
+                          right={false}/>
+            <SwipeToSlide languages={mobile} title={TextService.text.mobile.toUpperCase()} elements={2} right={true}/>
+            <SwipeToSlide languages={other} title={TextService.text.other.toUpperCase()} elements={5} right={false}/>
+            <div className={css.container}>
+                <Fade bottom>
+                    <h3>{TextService.text.commercialExp}</h3>
+                    <div className={css.subContainer2}>
+                        <ExpCard title={"Sellions"}
+                                 image={SellionsLogo}
+                                 description={"Junior Full Stack Developer"}
+                                 stack={sellionsTech}
+                                 date={TextService.text.sellionsDate}
+                                 website={"https://www.sellions.com/"}
+                                 learnMoreAction={openWebsite}
+                        />
+                        <ExpCard title={"Atinea"}
+                                 image={AtineaLogo}
+                                 description={"Junior Software Developer"}
+                                 stack={atineaTech}
+                                 date={TextService.text.atineaDate}
+                                 website={"https://atinea.pl/"}
+                                 learnMoreAction={openWebsite}
+                                 imageStyle={true}
+                        />
+                    </div>
+                </Fade>
+                <Fade bottom>
+                    <h3>{TextService.text.projects}</h3>
+                    <div className={css.subContainer2}>
+                        <ProjectCard title={"YouMeet Backend"}
+                                     image={YM}
+                                     description={TextService.text.youMeetBackendDesc}
+                                     technology={youMeetBack}
+                                     website={"https://github.com/KonradSobolewski/YouMeet_backend"}
+                                     learnMoreAction={openWebsite}
+                        />
+                        <ProjectCard title={"YouMeet Mobile"}
+                                     image={YM}
+                                     description={TextService.text.youMeetMobileDesc}
+                                     technology={youMeetFront}
+                                     website={"https://github.com/KonradSobolewski/YouMeet_mobile"}
+                                     learnMoreAction={openWebsite}
+                        />
+                    </div>
+                </Fade>
+                <Fade bottom>
+                    <div className={css.subContainer2}>
+                        <ProjectCard title={"RocketFuel"}
+                                     image={RF}
+                                     description={TextService.text.rocketFuelDesc}
+                                     technology={rocketFuelTech}
+                                     website={"https://github.com/KonradSobolewski/RocketFuel-Training-Manager"}
+                                     learnMoreAction={openWebsite}
+                        />
+                        <ProjectCard title={TextService.text.myWeb}
+                                     image={LOGO}
+                                     description={TextService.text.myWebDesc}
+                                     technology={webSiteTech}
+                                     website={"https://github.com/KonradSobolewski/my_website_app"}
+                                     learnMoreAction={openWebsite}
                                      imageStyle={true}
-                            />
-                        </div>
-                    </Fade>
-                    <Fade bottom>
-                        <h3>{TextService.text.projects}</h3>
-                        <div className={css.subContainer2}>
-                            <ProjectCard title={"YouMeet Backend"}
-                                         image={YM}
-                                         description={TextService.text.youMeetBackendDesc}
-                                         technology={youMeetBack}
-                                         website={"https://github.com/KonradSobolewski/YouMeet_backend"}
-                                         learnMoreAction={this.openWebsite}
-                            />
-                            <ProjectCard title={"YouMeet Mobile"}
-                                         image={YM}
-                                         description={TextService.text.youMeetMobileDesc}
-                                         technology={youMeetFront}
-                                         website={"https://github.com/KonradSobolewski/YouMeet_mobile"}
-                                         learnMoreAction={this.openWebsite}
-                            />
-                        </div>
-                    </Fade>
-                    <Fade bottom>
-                        <div className={css.subContainer2}>
-                            <ProjectCard title={"RocketFuel"}
-                                         image={RF}
-                                         description={TextService.text.rocketFuelDesc}
-                                         technology={rocketFuelTech}
-                                         website={"https://github.com/KonradSobolewski/RocketFuel-Training-Manager"}
-                                         learnMoreAction={this.openWebsite}
-                            />
-                            <ProjectCard title={TextService.text.myWeb}
-                                         image={LOGO}
-                                         description={TextService.text.myWebDesc}
-                                         technology={webSiteTech}
-                                         website={"https://github.com/KonradSobolewski/my_website_app"}
-                                         learnMoreAction={this.openWebsite}
-                                         imageStyle={true}
-                            />
-                        </div>
-                    </Fade>
-                </div>
+                        />
+                    </div>
+                </Fade>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default withStyles(styles)(Experience);

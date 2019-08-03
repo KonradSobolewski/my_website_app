@@ -18,7 +18,7 @@ const Cookies = props => {
                     I use Cookies
                 </div>
                 <div>
-                    This use cookies and other tracking technologies to improve your browsing experience on our website and
+                    This site use cookies and other tracking technologies to improve your browsing experience on our website and
                     to show you personalized content. By browsing my website, you consent to my use of cookies.
                 </div>
                 <div className={css.buttonContainer}>

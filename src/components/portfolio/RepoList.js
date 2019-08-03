@@ -9,9 +9,8 @@ const RepoList = props => (
         {props.repositories.sort(function (a, b) {
             return new Date(b.updated_at) - new Date(a.updated_at)
         }).map(repo => (
-            <Fade>
-                <RepoItem key={repo.id}
-                          repository={repo}>
+            <Fade key={repo.id}>
+                <RepoItem repository={repo}>
                     <div className={classes.DetailsContainer}>
                         <div className={classes.detailsContent}>
                             {repo.description}

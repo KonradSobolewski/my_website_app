@@ -213,7 +213,7 @@ const Experience = (props) => {
     });
     return (
         <div>
-            <Particles params={backgroundConfig} className={css.particles}/>
+            {/*<Particles params={backgroundConfig} className={css.particles}/>*/}
             <SwipeToSlide languages={backend} title={TextService.text.backend.toUpperCase()} elements={5} right={true}/>
             <SwipeToSlide languages={frontend} title={TextService.text.frontend.toUpperCase()} elements={5}
                           right={false}/>

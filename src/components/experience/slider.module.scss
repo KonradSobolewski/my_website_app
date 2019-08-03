@@ -80,6 +80,9 @@
       -webkit-animation-name: fadeIn; /* the name of the animation we defined above */
     }
   }
+  &:nth-child(1){
+    margin-top: 2em;
+  }
 
   &:hover {
     transform: scale(1.05);

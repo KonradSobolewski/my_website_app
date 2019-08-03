@@ -26,6 +26,17 @@
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .slider {
   border-radius: 1em;
   margin: 2em 15em;
@@ -52,6 +63,8 @@
     @media only screen and (max-width: 800px) {
       margin: 2em auto;
       width: 90%;
+      animation-name: fadeIn; /* the name of the animation we defined above */
+      -webkit-animation-name: fadeIn; /* the name of the animation we defined above */
     }
   }
   &:nth-of-type(odd) {
@@ -63,6 +76,8 @@
     @media only screen and (max-width: 800px) {
       margin: 2em auto;
       width: 90%;
+      animation-name: fadeIn; /* the name of the animation we defined above */
+      -webkit-animation-name: fadeIn; /* the name of the animation we defined above */
     }
   }
 

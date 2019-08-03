@@ -15,15 +15,11 @@ const Cookies = props => {
                     props.closeCookies()
                 }}/>
                 <div className={css.title}>
-                    Cookies Policy
+                    I use Cookies
                 </div>
                 <div>
-                    This website or its third-party tools use cookies, which are necessary to its functioning and
-                    required to achieve the purposes illustrated in the
-                    <a href="https://www.cookiepolicygenerator.com/live.php?token=9XxYDPkHFC4uH6Xu85e4AKhX8MPoZt42}"
-                       target="_blank" rel="noopener noreferrer" className={css.href}> cookie policy</a>.
-                    If you want to know more or withdraw your consent to all or some of the cookies, please refer to the
-                    cookie policy.
+                    This use cookies and other tracking technologies to improve your browsing experience on our website and
+                    to show you personalized content. By browsing my website, you consent to my use of cookies.
                 </div>
                 <div className={css.buttonContainer}>
                     <button className={css.button}

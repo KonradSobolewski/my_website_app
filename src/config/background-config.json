@@ -40,8 +40,8 @@
       "enable": false
     },
     "move": {
-      "enable": true,
-      "speed": 1,
+      "enable": false,
+      "speed": 0,
       "direction": "none",
       "random": true,
       "straight": false,

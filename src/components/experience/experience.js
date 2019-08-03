@@ -72,7 +72,7 @@ const Experience = (props) => {
         {
             "icon":  KOTLIN,
             "name": "Kotlin",
-            "level": 30
+            "level": 35
         },
         {
             "icon":  PSQL,
@@ -87,7 +87,7 @@ const Experience = (props) => {
         {
             "icon":  PHP,
             "name": "PHP",
-            "level": 20
+            "level": 15
         }];
     const frontend = [
         {
@@ -103,12 +103,12 @@ const Experience = (props) => {
         {
             "icon":  JS,
             "name": "JavaScript",
-            "level": 60
+            "level": 55
         },
         {
             "icon":  TS,
             "name": "TypeScript",
-            "level": 20
+            "level": 10
         },
         {
             "icon":  SASS,
@@ -129,12 +129,12 @@ const Experience = (props) => {
         {
             "icon":  REACT2,
             "name": "React Native",
-            "level": 50
+            "level": 45
         },
         {
             "icon":  ANDROID,
-            "name": "Android",
-            "level": 30
+            "name": "Android SDK",
+            "level": 25
         }];
     const other = [
         {
@@ -150,7 +150,7 @@ const Experience = (props) => {
         {
             "icon":  BITBUCKET,
             "name": "Bitbucket",
-            "level": 60
+            "level": 55
         },
         {
             "icon":  JIRA,
@@ -165,7 +165,7 @@ const Experience = (props) => {
         {
             "icon":  INTEL,
             "name": "InteliiJ",
-            "level": 50
+            "level": 55
         },
         {
             "icon":  BOOTSTRAP,

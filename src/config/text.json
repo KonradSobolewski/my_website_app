@@ -27,7 +27,7 @@
     "youMeetBackendDesc": "Backend for university project. The application allows to meet new people by setting a meeting. From the technical side, backend is based on JSON binary object (jsonb) data format. It allows to store parameters as JSON objects in postgres database. In conclusion it works as semi-NoSQL storage.",
     "youMeetMobileDesc": "Frontend for university project. The application uses facebook api, google map api. It was first touch with react's syntax and unfortunately redux implementation turn out as failure. But after all it was great possibility to gather experience.",
     "rocketFuelDesc": "This project was created in co-operation with friend. Main aim was to get experience in mobile field. In brief, the application was designed to serve as a gym manager for bodybuilders. We implemented connection with Firebase authorization, data storage, google login api, google calendar api.",
-    "myWebDesc": "A lot of love , effort and passion to design simple, responsive and to the point website. ",
+    "myWebDesc": "A lot of love , effort and passion to design simple, responsive and to the point website. The site use: github API, Hooks, google maps api, material UI. ",
     "myWeb": "My Website",
     "close": "Close"
   },
@@ -59,7 +59,7 @@
     "youMeetBackendDesc": "Backend dla projektu uczelnianego. Aplikacja umożliwia poznawanie nowych ludzi poprzez organizację spotkań. Z technicznej stony - backend bazuje na formacie danych JSON binary object (Jsonb). Umożliwia to przetrzymawania obiektów w postgresowej bazie w formacie JSON, co sprawia baza danych posiada strukture połowicznie NoSqlową.",
     "youMeetMobileDesc": "Frontend dla projektu uczelnianego. Aplikacja używa api facebooka i google maps. Był to pierwszy kontakt ze składnią reacta w wyniku czego implementacja redux'a okazała się porażką. Mimo wszystko traktuję projekt jako cenne doświadcznie.",
     "rocketFuelDesc": "Projekt powstał w kooperacji z przyjacielem. Głównym celem było zdobycie doświadczenia w tworzeniu aplikacji mobilnych. W skrócie, aplikacja umożliwia tworzenie planu treningowego dla osób trenujących kulturystkę. Z dodatkowych informacji aplikacja wykorzystuje autoryzację, data storage Firebase, google login api, google calendar api.",
-    "myWebDesc": "Dużo miłości, wyiłku i pasji, aby stworzyć prostą, responsywną i do rzeczy stronę wizytówkę :). ",
+    "myWebDesc": "Dużo miłości, wysiłku i pasji, aby stworzyć prostą, responsywną stronę wizytówkę. Strona wykorzystuje: github API, Hooks, google maps api, material UI. ",
     "myWeb": "Moja strona",
     "close": "Zamknij"
   }

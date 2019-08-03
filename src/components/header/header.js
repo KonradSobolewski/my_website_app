@@ -1,6 +1,5 @@
 import React from 'react';
 import * as css from './header.module.scss'
-import 'font-awesome/css/font-awesome.min.css';
 import TextService from '../../config/text.service'
 import Particles from 'react-particles-js';
 import particlesConfig from '../../config/particlesjs-config'

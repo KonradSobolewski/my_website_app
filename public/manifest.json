@@ -1,9 +1,9 @@
 {
-  "short_name": "Konrad Sobolewski",
-  "name": "Portfolio",
+  "short_name": "KS",
+  "name": "Konrad Sobolewski",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logoColor.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

@@ -14,7 +14,7 @@ const ProjectCard = props => (
         <CardActionArea>
             <CardMedia
                 component="img"
-                alt="Company"
+                alt="Image of project"
                 className={props.imageStyle ?  classes.variant : classes.media}
                 image={props.image}
                 title={props.title}

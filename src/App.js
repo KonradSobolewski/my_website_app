@@ -56,8 +56,8 @@ class App extends Component {
                                 className={css.switch}
                                 width={100}
                                 onColor={'#888'}
-                                checkedIcon={<img src={ENG} alt={"pl"} className={css.checkedSwitch}/>}
-                                uncheckedIcon={<img src={POLAND} alt={"ENG"} className={css.uncheckedSwitch}/>}/>
+                                checkedIcon={<img src={ENG} alt={"Polish Language"} className={css.checkedSwitch}/>}
+                                uncheckedIcon={<img src={POLAND} alt={"English Language"} className={css.uncheckedSwitch}/>}/>
                     </div>
                     <NavbarView {...this.props}/>
                     <Footer/>

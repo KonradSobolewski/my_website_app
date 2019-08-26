@@ -4,17 +4,23 @@ import connect from "react-redux/es/connect/connect";
 import {CircularProgress} from '@material-ui/core';
 import * as classes from './portfolio.module.scss'
 import RepoList from './RepoList'
+import {Helmet} from "react-helmet";
 
 class Portfolio extends React.Component {
     render() {
 
         const repoList = (
-            <div>
+            <>
                 <RepoList repositories={this.props.repositories}/>
-            </div>
+            </>
         );
         return (
-            <div>
+            <>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Portfolio to Konrad Sobolewski, Junior Full Stack Developer</title>
+                    <meta name="description" content="Contains fetched projects of Konrad Sobolewski from GitHub"/>
+                </Helmet>
                 <SearchMenu {...this.props}/>
                 {this.props.loading ?
                     (<div className={classes.progress}>
@@ -24,7 +30,7 @@ class Portfolio extends React.Component {
                             <div className={classes.progress}>Sorry something went wrong</div>) :
                         repoList
                 }
-            </div>
+            </>
         );
     }
 }

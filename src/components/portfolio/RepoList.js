@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 import Fade from 'react-reveal/Fade'
 
 const RepoList = props => (
-    <React.Fragment>
+    <>
         {props.repositories.sort(function (a, b) {
             return new Date(b.updated_at) - new Date(a.updated_at)
         }).map(repo => (
@@ -16,7 +16,7 @@ const RepoList = props => (
                             {repo.description}
                         </div>
                         <div className={classes.RefreshButton}>
-                            <a href={repo.html_url} target='_blank' rel="noopener noreferrer"
+                            <a href={repo.html_url} target='_blank' rel="noopener noreferrer" aria-label={"Link to Konrad project"}
                                style={{textDecoration: 'none'}}>
                                 <Button color='secondary'>Go to repo</Button>
                             </a>
@@ -25,7 +25,7 @@ const RepoList = props => (
                 </RepoItem>
             </Fade>
         ))}
-    </React.Fragment>
+    </>
 );
 
 export default RepoList;

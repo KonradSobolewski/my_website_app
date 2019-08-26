@@ -11,11 +11,11 @@ const ExpModal = (props) => {
           <div className={classes.modal}>
               {props.items.map(item => {
                   return <div key={item.name.toString() } className={classes.row}>
-                      <img src={item.icon} className={classes.logo} alt={"Ups"} />
+                      <img src={item.icon} className={classes.logo} alt={"Image of Experience"} />
                       <div className={classes.level}>
-                          <div>
+                          <>
                               {item.name}
-                          </div>
+                          </>
                           <Line percent={item.level} strokeWidth={2}/>
                       </div>
                   </div>

@@ -14,7 +14,7 @@ const ExpCard = props => (
         <CardActionArea>
             <CardMedia
                 component="img"
-                alt="Company"
+                alt="Company were Konrad worked"
                 className={props.imageStyle ? classes.variant : classes.media}
                 image={props.image}
                 title={props.title}
@@ -35,11 +35,9 @@ const ExpCard = props => (
             <div className={classes.date}>
                 {props.date}
             </div>
-            <div>
             <Button size="small" color="primary" onClick={() => props.learnMoreAction(props.website)}>
                 {TextService.text.learnMore}
             </Button>
-            </div>
         </CardActions>
     </Card>
 );

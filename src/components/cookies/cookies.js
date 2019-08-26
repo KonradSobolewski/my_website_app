@@ -17,10 +17,10 @@ const Cookies = props => {
                 <div className={css.title}>
                     I use Cookies
                 </div>
-                <div>
+                <>
                     This site use cookies and other tracking technologies to improve your browsing experience on our website and
                     to show you personalized content. By browsing my website, you consent to my use of cookies.
-                </div>
+                </>
                 <div className={css.buttonContainer}>
                     <button className={css.button}
                          onClick={() => {

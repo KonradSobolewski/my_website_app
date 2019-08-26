@@ -38,6 +38,7 @@ import Fade from 'react-reveal/Fade'
 import TextService from "../../config/text.service";
 import Particles from "react-particles-js";
 import backgroundConfig from "../../config/background-config";
+import {Helmet} from "react-helmet";
 
 const styles = {
     root: {
@@ -72,7 +73,7 @@ const Experience = (props) => {
         {
             "icon":  KOTLIN,
             "name": "Kotlin",
-            "level": 35
+            "level": 30
         },
         {
             "icon":  PSQL,
@@ -93,7 +94,7 @@ const Experience = (props) => {
         {
             "icon": REACT2,
             "name": "React",
-            "level": 60
+            "level": 55
         },
         {
             "icon": ANGULAR,
@@ -103,7 +104,7 @@ const Experience = (props) => {
         {
             "icon":  JS,
             "name": "JavaScript",
-            "level": 55
+            "level": 50
         },
         {
             "icon":  TS,
@@ -129,7 +130,7 @@ const Experience = (props) => {
         {
             "icon":  REACT2,
             "name": "React Native",
-            "level": 45
+            "level": 50
         },
         {
             "icon":  ANDROID,
@@ -140,12 +141,12 @@ const Experience = (props) => {
         {
             "icon":  GIT,
             "name": "GIT",
-            "level": 50
+            "level": 55
         },
         {
             "icon":  GITHUB,
             "name": "Github",
-            "level": 50
+            "level": 45
         },
         {
             "icon":  BITBUCKET,
@@ -155,7 +156,7 @@ const Experience = (props) => {
         {
             "icon":  JIRA,
             "name": "Jira",
-            "level": 60
+            "level": 55
         },
         {
             "icon":  FIREBASE,
@@ -165,7 +166,7 @@ const Experience = (props) => {
         {
             "icon":  INTEL,
             "name": "InteliiJ",
-            "level": 55
+            "level": 50
         },
         {
             "icon":  BOOTSTRAP,
@@ -213,6 +214,11 @@ const Experience = (props) => {
     });
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Experience of Konrad Sobolewski, Junior Full Stack Developer</title>
+                <meta name="description" content="Contains Konrad gained description by creating own projects and shows his actual experience as developer"/>
+            </Helmet>
             {/*<Particles params={backgroundConfig} className={css.particles}/>*/}
             <SwipeToSlide languages={backend} title={TextService.text.backend.toUpperCase()} elements={5} right={true}/>
             <SwipeToSlide languages={frontend} title={TextService.text.frontend.toUpperCase()} elements={5}

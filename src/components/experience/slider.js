@@ -39,7 +39,7 @@ const SwipeToSlide = (props) => {
             <div className={css.container}>
                 <Slider {...settings}>
                     {props.languages.map(item => {
-                        return <img src={item.icon} className={css.logo} alt={"Ups"} key={item.name.toString()}/>
+                        return <img src={item.icon} className={css.logo} alt={"Icon of " + item.name.toString()} key={item.name.toString()}/>
                     })}
                 </Slider>
             </div>
